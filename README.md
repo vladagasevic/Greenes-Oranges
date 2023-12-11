@@ -29,6 +29,7 @@ dokumenta, forumim pitanja i osgvori…..)
 13. Proveriti ispravnost kodova
 14. Zaštiata autorskih prava
 15. Testiranje web prezentacija
+16. Startovanje Web prezentacije
 
 RADNE TACKE:
 - FIGMA - dizajn sajta - kreirati grupu
@@ -38,5 +39,5 @@ RADNE TACKE:
 - Primer sajta - Green Energy 360
 - Logo, Slike za templejt - Vlada
 - Templejt sajta u React - Filip
-17. Startovanje Web prezentacije
-![image](https://github.com/vladagasevic/Greenes-Oranges/assets/28383520/047cbce2-ab14-4f7d-94bc-5e222e06200f)
+
+
