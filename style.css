@@ -1,13 +1,15 @@
 body {
-  background-color: #fd7e14;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px "Outfit", sans-serif;
   font-size: 1rem;
+}
+
+h1 {
+  font: 26px "Roboto", sans-serif;
 }
 
 nav {
   position: fixed;
   z-index: 1030;
-  background-color: #333;
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
@@ -22,13 +24,25 @@ nav {
 }
 
 .nav-link {
-  color: #f8f9fa;
-  padding-right: 0.5rem;
+  padding-right: 0.1rem;
   text-decoration: none;
+  color: black;
 }
 
 .nav-link:hover, .nav-link:focus {
-  color: cyan;
+  color: #4D9639;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav ul li {
+  display: inline-block;
+}
+
+nav ul li:first-child {
+  margin-right: auto;
 }
 
 .fade {
