@@ -1,55 +1,41 @@
 'use client';
 
-function Slide() {
-  return (
-    <div className="mySlides fade">
-      <img src="covers/pexels-pixabay-356036.jpg"/>
-    </div>
-  )
+import { useState, useEffect } from "react";
+
+const covers = ["covers/pexels-pixabay-356036.jpg", "covers/2.jpg"];
+function Slides() {
+  const [id, setId] = useState(0);
+
+  useEffect(() => {
+    setTimeout(() => setId((id + 1) % covers.length), 3000);
+  });
+
+  return covers.map((cover, num) => (
+    <img loading="lazy" className="fade" src={cover} style={{ display: num == id ? "block" : "none" }}/>
+  ));
 }
 
-function Dot() {
+function Dot({num}: {num: number}) {
   return (
     <span className="dot" onClick={() => {
-      const slides = document.getElementsByClassName("reklame-slides");
+      const slides = document.getElementsByClassName("slides");
       const dots = document.getElementsByClassName("dot");
 
-      let el = 0;
-      for (let i = 0; i < dots.length; i++) {
-        dots[i].addEventListener("click", () => {
-          el = -1;
-          for (let j = 0; j < slides.length; j++)
-            slides[j].className = slides[j].className.replace("oglas-result-location", "d-none");
+      for (let i = 0; i < slides.length; i++)
+        slides[i].classList.add("d-none");
 
-          for (let j = 0; j < dots.length; j++)
-            dots[j].classList.remove("active")
+      for (let i = 0; i < dots.length; i++)
+        dots[i].classList.remove("active")
 
-          slides[i].className = slides[i].className.replace("d-none", "oglas-result-location");
-          dots[i].classList.add("active")
-        });
-      }
+      slides[num].classList.remove("d-none");
+      dots[num].classList.add("active");
     }} />
   )
 }
 
 export default function Home() {
-  function showSlides() {
-    if (el === -1) return;
-    if (el > slides.length - 1) el = 0;
-
-    slides[el].className = slides[el].className.replace("d-none", "oglas-result-location");
-    dots[el].classList.add("active");
-
-    let prev = el === 0 ? dots.length - 1 : el - 1;
-    dots[prev].classList.remove("active");
-    slides[prev].className = slides[prev].className.replace("oglas-result-location", "d-none");
-    el++;
-
-    setTimeout(showSlides, 3000);
-  }
-
   function leftClick() {
-    const els = document.getElementsByClassName("ponuda");
+    const els = document.getElementsByClassName("slides");
     let fv = 0;
     if (fv > 0) {
       els[fv + 2].classList.add("d-none");
@@ -59,7 +45,7 @@ export default function Home() {
   }
 
   function rightClick() {
-    const els = document.getElementsByClassName("ponuda");
+    const els = document.getElementsByClassName("slides");
     let fv = 0;
     if (fv < els.length - 3) {
       els[fv].classList.add("d-none");
@@ -68,19 +54,52 @@ export default function Home() {
     }
   }
 
+  let dots: React.JSX.Element[] = [];
+  covers.forEach((_cover, index) => {
+    dots.push(<Dot key={`dot_${index}`} num={index}/>)
+  });
+
   return (
     <main>
-      Digitalizacija u sektoru obnovljivih izvora energije igra ključnu ulogu u optimizaciji, praćenju i upravljanju obnovljivim izvorima energije. Razvojem seta potrebnih komptencija u okviru programa zaštite životne sredine, pojačaće se kvalitet i raznovrsnost stručnog kadra koji može da odgovori znanjem na izazove klimatskih promena i akutelne energetske krize.
-
-      <div className="slideshow-container" onLoad={showSlides} style={{width: '100%'}}>
+      <div style={{width: "100%"}}>
+        <Slides/>
         <button onClick={leftClick}>&#10094;</button>
-        <Slide />
         <button onClick={rightClick}>&#10095;</button>
       </div>
-
-      <div style={{textAlign: 'center'}}>
-        <Dot />
+      <div style={{textAlign: "center"}}>
+        {dots}
       </div>
+      GREENES development of green energy competences for energy stability<br/>
+
+      ZAŠTO GREENES?<br/>
+      Digitalizacija u sektoru obnovljivih izvora energije igra ključnu ulogu u optimizaciji, praćenju i upravljanju obnovljivim izvorima energije. Razvojem seta potrebnih komptencija u okviru programa zaštite životne sredine, pojačaće se kvalitet i raznovrsnost stručnog kadra koji može da odgovori znanjem na izazove klimatskih promena i akutelne energetske krize.<br/>
+
+      CILJEVI<br/>
+
+      Opšti i specifični ciljevi<br/>
+      Opsti i specificni ciljevi kao i rezultati GREENES projekta, usmereni su ka studentima, nastavnicima, profesionalcima, donosiocima odluka na lokalnom, regionalnom i nacionalnon nivou i generalno mladima. Kroz unapredjenje komptencija stvorice se uslovi za kreiranje profesionalaca sposobnih da odgovore zahtevima savremenog energetskog trzista.<br/>
+
+      Aspekt digitalizacije<br/>
+      Digitilizacija je noseci faktor GREENES projekta i provlaci se kroz programske sadržaje, inovacije u nastavnom procesu, razvoja virtuelnog centra razmene iskustva znanja i primera dobre prakse u formi interaktivne platforme, kurseva celoživotnog učenja LLL, pa do diseminacionih metoda i mehanizam sprovodjenja kampanja daje prliku partnerima<br/>
+
+      Nove kompetencije<br/>
+      Unapredjenjem postojece kompetencije studenata na master studijama iz oblasti zaštite životne sredine, realizovace se elementima digitalizacije energetskog sektora, kroz primenu IKT tehnologija poput block chaina, IOT, AI VR, i sl, kreirace se strucnjaci spremni na aktuelne izazove i potrebe energetskog sektora. Na taj nacin, ucinice se prvi korak u podizanju kapaciteta<br/>
+
+      OBNOVLJIVI IZVORI ENERGIJE<br/>
+
+      Energija Biomase<br/>
+
+      Geotermalna Energija<br/>
+
+      Hidroenergija<br/>
+
+      Solarni Izvori<br/>
+
+      Vetrogeneratori<br/>
+
+      Energija Vodonika<br/>
+
+      NAŠI PARTNERI<br/>
     </main>
   )
 }

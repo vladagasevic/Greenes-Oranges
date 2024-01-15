@@ -1,6 +1,7 @@
 body {
   font: 14px "Outfit", sans-serif;
   font-size: 1rem;
+  margin: 0px;
 }
 
 h1 {
@@ -45,6 +46,10 @@ nav ul li:first-child {
   margin-right: auto;
 }
 
+.d-none {
+  display: none;
+}
+
 .dot {
   height: 15px;
   width: 15px;
@@ -53,6 +58,14 @@ nav ul li:first-child {
   border-radius: 50%;
   display: inline-block;
   transition: background-color .6s ease;
+}
+
+.dot, button {
+  cursor: pointer;
+}
+
+.active {
+  background-color: RoyalBlue;
 }
 
 .fade {
@@ -73,7 +86,7 @@ nav ul li:first-child {
 
 @media only screen and (orientation: landscape) {
   body {
-    padding-top: 70px;
+    padding-top: 45px;
   }
 
   .nav-top {
