@@ -33,6 +33,7 @@
   height: auto;
   z-index: 1;
   display: block;
+  clip-path: polygon(100% 0%, 60% 100%, 0% 100%, 0% 0%);
 }
 
 .sliderTextContainer {
@@ -78,7 +79,7 @@
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: 20px 2px;
   background-color: #D2E8FF;
   border-radius: 50%;
   display: inline-block;

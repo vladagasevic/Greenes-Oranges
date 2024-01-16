@@ -5,16 +5,16 @@ import { useState, useEffect } from "react"
 import styles from "./page.module.css"
 
 function Slides() {
-  const covers = ["covers/slider_01.png", "covers/pexels-pixabay-356036.jpg"];
+  const covers = ["covers/image0_0.png", "covers/pexels-pixabay-356036.jpg"];
   const [id, setId] = useState(0);
 
-  useEffect(() => {
-    setTimeout(() => setId((id + 1) % covers.length), 3000);
-  });
+  // useEffect(() => {
+  //   setTimeout(() => setId((id + 1) % covers.length), 3000);
+  // });
 
   function Dot({num}: {num: number}) {
     return (
-      <span className={styles.dot} style={{ backgroundColor: num == id ? "RoyalBlue" : "none" }} onClick={() => {
+      <span className={styles.dot} style={{ backgroundColor: num == id ? "Green" : "none" }} onClick={() => {
         setId(num);
       }} />
     )
