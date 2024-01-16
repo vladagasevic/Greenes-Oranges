@@ -55,11 +55,32 @@
   padding: 0 1rem;
   height: 100%;
   color: black;
+  position: relative;
 }
 
 .navbar_links:hover {
   color: #B4CFAC;
   transition: all 0.3s ease;
+}
+
+.navbar_links::after {
+  content: '';
+  /*height: 2px;*/
+  width: 90%;
+  border-width: 1px;
+  border-style: solid;
+  background: linear-gradient(white, white) padding-box,
+  radial-gradient(green, #EEEEEE) border-box;
+  border: 1px solid transparent;
+  position: absolute;
+  bottom: 20px;
+  opacity: 0;
+  transition: all;
+  pointer-events: none;
+}
+
+.navbar_links:hover::after {
+  opacity: 1;
 }
 
 /* Responsive design */
