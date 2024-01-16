@@ -5,7 +5,7 @@ import { useState, useEffect } from "react"
 import styles from "./page.module.css"
 
 function Slides() {
-  const covers = ["covers/image0_0.png", "covers/pexels-pixabay-356036.jpg"];
+  const covers = ["covers/image0_0.jpg", "covers/image0_1.jpg", "covers/image0_2.jpg"];
   const [id, setId] = useState(0);
 
   // useEffect(() => {

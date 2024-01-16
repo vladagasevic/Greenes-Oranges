@@ -33,7 +33,7 @@
   height: auto;
   z-index: 1;
   display: block;
-  clip-path: polygon(100% 0%, 60% 100%, 0% 100%, 0% 0%);
+  clip-path: polygon(100% 0%, 70% 100%, 0% 100%, 0% 0%);
 }
 
 .sliderTextContainer {
