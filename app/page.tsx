@@ -1,5 +1,4 @@
 "use client";
-
 import { useState, useEffect } from "react"
 //import Image from "next/image"
 import styles from "./page.module.css"
@@ -9,23 +8,23 @@ function Slides() {
   const [id, setId] = useState(0);
 
   // useEffect(() => {
-  //   setTimeout(() => setId((id + 1) % covers.length), 3000);
+  //   setTimeout(() => setId((id + 1) % covers.length), 4000);
   // });
 
-  function Dot({num}: {num: number}) {
-    return (
-      <span className={styles.dot} style={{ backgroundColor: num == id ? "Green" : "none" }} onClick={() => {
-        setId(num);
-      }} />
-    )
-  }
+  // function Dot({num}: {num: number}) {
+  //   return (
+  //     <span className={styles.dot} style={{ backgroundColor: num == id ? "Green" : "none" }} onClick={() => {
+  //       setId(num);
+  //     }} />
+  //   )
+  // }
 
   function leftClick() {
-    //setId()
-  }
+      setId(id === 0 ? covers.length - 1 : id - 1);
+   }
 
   function rightClick() {
-    //setId()
+      setId(id === covers.length - 1 ? 0 : id + 1);
   }
 
   return (
@@ -52,11 +51,11 @@ function Slides() {
           <h1>GREENES KA220-HED</h1>
         </div>
       </div>
-      <div style={{textAlign: "center"}}>
+      {/* <div style={{textAlign: "center"}}>
         {covers.map((_cover, num) => (
           <Dot key={`dot_${num}`} num={num}/>
         ))}
-      </div>
+      </div> */}
     </>
   )
 }
