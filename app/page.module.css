@@ -3,10 +3,8 @@
   margin-bottom: 20px;
   border-width: 3px;
   border-style: solid;
-  /*border-image: linear-gradient(to right, green, #eeeeee) 1;*/
-
   background: linear-gradient(white, white) padding-box,
-            linear-gradient(to right, green, #EEEEEE) border-box;
+            radial-gradient(green, #EEEEEE) border-box;
   border-radius: 50em;
   border: 4px solid transparent;
 }
