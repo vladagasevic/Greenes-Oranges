@@ -81,7 +81,7 @@
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 20px 2px;
+  margin: 5px 2px;
   background-color: #D2E8FF;
   border-radius: 50%;
   display: inline-block;
@@ -137,13 +137,13 @@
 
 .whyGreenesTextContainer h1 {
   font-family: 'Outfit';
-  padding: 20px;
+  padding: 5px;
 }
 
 .whyGreenesTextContainer h3 {
   font-size: 1.5rem;
   font-family: 'Roboto';
-  font-weight: lighter;
+  font-weight: 100;
   text-align: center;
   display: flex;
 }
@@ -152,7 +152,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 1rem;
+  margin-top: 20px;
   width: 100%;
 }
 
@@ -166,7 +166,34 @@
   width: 50%;
   border: none;
   outline: none;
-  border-radius: 20px;
-  background: green;
+  border-radius: 30px;
+  background: linear-gradient(to right, #EEEEEE, green, green, #EEEEEE);
   color: white;
+  font-family: 'Outfit';
+}
+
+.button:hover {
+  background: green;
+}
+
+/* Ciljevi */
+
+.ciljeviContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.ciljeviTitleContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ciljeviTitleContainer h1 {
+  font-family: 'Outfit';
+  padding: 10px;
 }

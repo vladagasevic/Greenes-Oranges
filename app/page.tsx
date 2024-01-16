@@ -88,8 +88,15 @@ export default function Home() {
             </div>
           </div>
       </div>
+      <div className={styles.ciljeviContainer}>
+        <div className={styles.ciljeviTitleContainer}>
+          <hr className={styles.hr}/>
+          <h1>CILJEVI</h1>
+        </div>
+        
+      </div>
       <br/>
-      CILJEVI<br/>
+      <br/>
 
       Opšti i specifični ciljevi<br/>
       Opsti i specificni ciljevi kao i rezultati GREENES projekta, usmereni su ka studentima, nastavnicima, profesionalcima, donosiocima odluka na lokalnom, regionalnom i nacionalnon nivou i generalno mladima. Kroz unapredjenje komptencija stvorice se uslovi za kreiranje profesionalaca sposobnih da odgovore zahtevima savremenog energetskog trzista.<br/>
