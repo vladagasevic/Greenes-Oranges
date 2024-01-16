@@ -1,0 +1,171 @@
+.hr {
+  width: 70%;
+  margin-bottom: 20px;
+  border-width: 3px;
+  border-style: solid;
+  /*border-image: linear-gradient(to right, green, #eeeeee) 1;*/
+
+  background: linear-gradient(white, white) padding-box,
+            linear-gradient(to right, green, #EEEEEE) border-box;
+  border-radius: 50em;
+  border: 4px solid transparent;
+}
+
+/* Img Slider */
+
+.sliderMainContainer {
+  display: flex;
+  justify-content: space-around;
+  background: #EEEEEE;
+}
+
+.sliderContainer {
+  width: 70%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  display: block;
+}
+
+.sliderTextContainer {
+  display: flex;
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  justify-content: left;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.sliderTextContainer h1 {
+  font-weight: bold;
+  font-family: 'Outfit';
+}
+
+.rightArrow {
+  z-index: 2;
+  color: green;
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+}
+
+.leftArrow {
+  z-index: 2;
+  color: green;
+  position: absolute;
+  bottom: 0;
+  right: 15%;
+}
+
+.oranges h1 {
+  font-family: 'Outfit';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #D2E8FF;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color .6s ease;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Why Greenes */
+
+.whyGreenesContainer {
+  display: flex;
+  justify-content: space-around;
+  background: #EEEEEE;
+  align-items: center;
+}
+
+.whyGreenesImageContainer {
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.whyGreenesImage {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.whyGreenesImage img {
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  display: block;
+}
+
+.whyGreenesTextContainer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  box-sizing: border-box;
+  justify-content: left;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.whyGreenesTextContainer h1 {
+  font-family: 'Outfit';
+  padding: 20px;
+}
+
+.whyGreenesTextContainer h3 {
+  font-size: 1.5rem;
+  font-family: 'Roboto';
+  font-weight: lighter;
+  text-align: center;
+  display: flex;
+}
+
+.whyGreenesBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 20px 20px;
+  height: 100%;
+  width: 50%;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  background: green;
+  color: white;
+}

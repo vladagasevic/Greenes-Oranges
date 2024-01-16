@@ -1,79 +1,95 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect } from "react"
+//import Image from "next/image"
+import styles from "./page.module.css"
 
-const covers = ["covers/pexels-pixabay-356036.jpg", "covers/2.jpg"];
 function Slides() {
+  const covers = ["covers/slider_01.png", "covers/pexels-pixabay-356036.jpg"];
   const [id, setId] = useState(0);
 
   useEffect(() => {
     setTimeout(() => setId((id + 1) % covers.length), 3000);
   });
 
-  return covers.map((cover, num) => (
-    <img loading="lazy" className="fade" src={cover} style={{ display: num == id ? "block" : "none" }}/>
-  ));
-}
+  function Dot({num}: {num: number}) {
+    return (
+      <span className={styles.dot} style={{ backgroundColor: num == id ? "RoyalBlue" : "none" }} onClick={() => {
+        setId(num);
+      }} />
+    )
+  }
 
-function Dot({num}: {num: number}) {
+  function leftClick() {
+    //setId()
+  }
+
+  function rightClick() {
+    //setId()
+  }
+
   return (
-    <span className="dot" onClick={() => {
-      const slides = document.getElementsByClassName("slides");
-      const dots = document.getElementsByClassName("dot");
-
-      for (let i = 0; i < slides.length; i++)
-        slides[i].classList.add("d-none");
-
-      for (let i = 0; i < dots.length; i++)
-        dots[i].classList.remove("active")
-
-      slides[num].classList.remove("d-none");
-      dots[num].classList.add("active");
-    }} />
+    <>
+      <div className={styles.sliderMainContainer}>
+        <div className={styles.sliderContainer}>
+          <div className={styles.slider}>
+            {covers.map((cover, num) => (
+              <img loading="lazy" className={styles.fade} src={cover} alt={cover} key={cover} style={{ display: num == id ? "block" : "none" }}/>
+            ))}
+            <h1 className={styles.leftArrow}>
+              <span className="material-symbols-outlined" onClick={leftClick} style={{fontSize: "48px"}}>
+                chevron_left
+              </span>
+            </h1>
+            <h1 className={styles.rightArrow}>
+              <span className="material-symbols-outlined" onClick={rightClick} style={{ fontSize: "48px" }}>
+                chevron_right
+              </span>
+            </h1>
+          </div>
+        </div>
+        <div className={styles.sliderTextContainer}>
+          <h1>GREENES KA220-HED</h1>
+        </div>
+      </div>
+      <div style={{textAlign: "center"}}>
+        {covers.map((_cover, num) => (
+          <Dot key={`dot_${num}`} num={num}/>
+        ))}
+      </div>
+    </>
   )
 }
 
 export default function Home() {
-  function leftClick() {
-    const els = document.getElementsByClassName("slides");
-    let fv = 0;
-    if (fv > 0) {
-      els[fv + 2].classList.add("d-none");
-      els[fv - 1].classList.remove("d-none");
-      fv--;
-    }
-  }
-
-  function rightClick() {
-    const els = document.getElementsByClassName("slides");
-    let fv = 0;
-    if (fv < els.length - 3) {
-      els[fv].classList.add("d-none");
-      els[fv + 3].classList.remove("d-none");
-      fv++;
-    }
-  }
-
-  let dots: React.JSX.Element[] = [];
-  covers.forEach((_cover, index) => {
-    dots.push(<Dot key={`dot_${index}`} num={index}/>)
-  });
-
   return (
     <main>
-      <div style={{width: "100%"}}>
-        <Slides/>
-        <button onClick={leftClick}>&#10094;</button>
-        <button onClick={rightClick}>&#10095;</button>
+      <Slides/>
+      <div className={styles.oranges}>
+        <h1>GREENES development of green energy competences, for energy stability</h1>
       </div>
-      <div style={{textAlign: "center"}}>
-        {dots}
+      <div className={styles.whyGreenesContainer}>
+        <div className={styles.whyGreenesTextContainer}>
+          <h1>ZAŠTO GREENES?</h1>
+          <hr className={styles.hr}/>
+          <h3>
+            Digitalizacija u sektoru obnovljivih izvora energije igra ključnu ulogu u optimizaciji, 
+            praćenju i upravljanju obnovljivim izvorima energije. 
+            Razvojem seta potrebnih komptencija u okviru programa zaštite životne sredine, 
+            pojačaće se kvalitet i raznovrsnost stručnog kadra koji može da odgovori znanjem 
+            na izazove klimatskih promena i akutelne energetske krize.
+          </h3>
+          <div className={styles.whyGreenesBtn}>
+            <a href="/" className={styles.button}>OBLASTI DIGITALIZACIJE</a>
+          </div>
+        </div>
+          <div className={styles.whyGreenesImageContainer}>
+            <div className={styles.whyGreenesImage}>
+              <img src="Resources/whyGreenes_img.jpg" alt="Why Greenes"/>
+            </div>
+          </div>
       </div>
-      GREENES development of green energy competences for energy stability<br/>
-
-      ZAŠTO GREENES?<br/>
-      Digitalizacija u sektoru obnovljivih izvora energije igra ključnu ulogu u optimizaciji, praćenju i upravljanju obnovljivim izvorima energije. Razvojem seta potrebnih komptencija u okviru programa zaštite životne sredine, pojačaće se kvalitet i raznovrsnost stručnog kadra koji može da odgovori znanjem na izazove klimatskih promena i akutelne energetske krize.<br/>
-
+      <br/>
       CILJEVI<br/>
 
       Opšti i specifični ciljevi<br/>
