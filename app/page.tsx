@@ -140,6 +140,24 @@ export default function Home() {
           <h1>OBNOVLJIVI IZVORI ENERGIJE</h1>
         </div>
         <div className={styles.obnovljiviIzvoriImageContainerColumn}>
+          <div className={styles.obnovljiviIzvoriItem}>
+            <h4>Energija Biomase</h4>
+          </div>
+          <div className={styles.obnovljiviIzvoriItem}>
+          <h4>Geotermalna Energija</h4>
+          </div>
+          <div className={styles.obnovljiviIzvoriItem}>
+          <h4>Hidroenergija</h4>
+          </div>
+          <div className={styles.obnovljiviIzvoriItem}>
+          <h4>Solarni Izvori</h4>
+          </div>
+          <div className={styles.obnovljiviIzvoriItem}>
+          <h4>Vetrogeneratori</h4>
+          </div>
+          <div className={styles.obnovljiviIzvoriItem}>
+          <h4>Energija Vodonika</h4>
+          </div>
 
         </div>
 
@@ -151,9 +169,6 @@ export default function Home() {
       <br/>
       <br/>
 
-      
-      
-      OBNOVLJIVI IZVORI ENERGIJE<br/>
 
       Energija Biomase<br/>
 

@@ -249,3 +249,21 @@
 .obnovljiviIzvoriTitleContainer h1 {
   font-family: 'Outfit';
 }
+
+.obnovljiviIzvoriImageContainerColumn {
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+}
+
+.obnovljiviIzvoriImageContainerColumn > * {
+  width: calc(100% / 6);
+}
+
+.obnovljiviIzvoriItem {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+}
