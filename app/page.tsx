@@ -141,21 +141,27 @@ export default function Home() {
         </div>
         <div className={styles.obnovljiviIzvoriImageContainerColumn}>
           <div className={styles.obnovljiviIzvoriItem}>
+            <img src="Resources/Biomass.jpg" alt="" />
             <h4>Energija Biomase</h4>
           </div>
           <div className={styles.obnovljiviIzvoriItem}>
+          <img src="Resources/Geothermal.jpeg" alt="" />
           <h4>Geotermalna Energija</h4>
           </div>
           <div className={styles.obnovljiviIzvoriItem}>
+          <img src="Resources/Hydro-Power.jpg" alt="" />
           <h4>Hidroenergija</h4>
           </div>
           <div className={styles.obnovljiviIzvoriItem}>
+          <img src="Resources/SolarPanels.jpg" alt="" />
           <h4>Solarni Izvori</h4>
           </div>
           <div className={styles.obnovljiviIzvoriItem}>
+          <img src="Resources/Wind-Energy.jpg" alt="" />
           <h4>Vetrogeneratori</h4>
           </div>
           <div className={styles.obnovljiviIzvoriItem}>
+          <img src="Resources/Hydrogen_Energy.jpg" alt="" />
           <h4>Energija Vodonika</h4>
           </div>
 
@@ -166,22 +172,6 @@ export default function Home() {
         </div>
 
       </div>
-      <br/>
-      <br/>
-
-
-      Energija Biomase<br/>
-
-      Geotermalna Energija<br/>
-
-      Hidroenergija<br/>
-
-      Solarni Izvori<br/>
-
-      Vetrogeneratori<br/>
-
-      Energija Vodonika<br/>
-
       NAŠI PARTNERI<br/>
     </main>
   )
