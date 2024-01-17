@@ -93,20 +93,53 @@ export default function Home() {
           <hr className={styles.hr}/>
           <h1>CILJEVI</h1>
         </div>
+        <div className={styles.ciljeviContainerColumn}>
+          <div className={styles.ciljevi}>
+            <img src="Resources/flag.svg" alt="OpstiiSpecificniCiljevi_Img" />
+            <h3>Opšti i specifični ciljevi</h3>
+            <p>
+            Opsti i specificni ciljevi kao i rezultati GREENES projekta, 
+            usmereni su ka studentima, nastavnicima, profesionalcima, 
+            donosiocima odluka na lokalnom, regionalnom i nacionalnon nivou 
+            i generalno mladima. Kroz unapredjenje komptencija stvorice se uslovi 
+            za kreiranje profesionalaca sposobnih da odgovore zahtevima s
+            avremenog energetskog trzista.
+            </p>
+          </div>
+          <div className={styles.ciljevi}>
+          <img src="Resources/linked.svg" alt="AspektDigitalizacije_Img" />
+          <h3>Aspekt digitalizacije</h3>
+          <p>
+          Digitilizacija je noseci faktor GREENES projekta i provlaci 
+          se kroz programske sadržaje, inovacije u nastavnom procesu, 
+          razvoja virtuelnog centra razmene iskustva znanja i primera 
+          dobre prakse u formi interaktivne platforme, kurseva celoživotnog 
+          učenja, pa do diseminacionih metoda i mehanizam sprovodjenja 
+          kampanja daje prliku partnerima
+          </p>
+          </div>
+          <div className={styles.ciljevi}>
+          <span className="material-symbols-outlined">verified</span>
+            <h3>Nove kompetencije</h3>
+            <p>
+            Unapredjenjem postojece kompetencije studenata na master 
+            studijama iz oblasti zaštite životne sredine, realizovace se 
+            elementima digitalizacije energetskog sektora, kroz primenu 
+            IKT tehnologija poput block chaina, IOT, AI VR, i sl, 
+            kreirace se strucnjaci spremni na aktuelne izazove i potrebe 
+            energetskog sektora. Na taj nacin, ucinice se prvi 
+            korak u podizanju kapaciteta
+            </p>
+          </div>
+        </div>
+        
         
       </div>
       <br/>
       <br/>
 
-      Opšti i specifični ciljevi<br/>
-      Opsti i specificni ciljevi kao i rezultati GREENES projekta, usmereni su ka studentima, nastavnicima, profesionalcima, donosiocima odluka na lokalnom, regionalnom i nacionalnon nivou i generalno mladima. Kroz unapredjenje komptencija stvorice se uslovi za kreiranje profesionalaca sposobnih da odgovore zahtevima savremenog energetskog trzista.<br/>
-
-      Aspekt digitalizacije<br/>
-      Digitilizacija je noseci faktor GREENES projekta i provlaci se kroz programske sadržaje, inovacije u nastavnom procesu, razvoja virtuelnog centra razmene iskustva znanja i primera dobre prakse u formi interaktivne platforme, kurseva celoživotnog učenja LLL, pa do diseminacionih metoda i mehanizam sprovodjenja kampanja daje prliku partnerima<br/>
-
-      Nove kompetencije<br/>
-      Unapredjenjem postojece kompetencije studenata na master studijama iz oblasti zaštite životne sredine, realizovace se elementima digitalizacije energetskog sektora, kroz primenu IKT tehnologija poput block chaina, IOT, AI VR, i sl, kreirace se strucnjaci spremni na aktuelne izazove i potrebe energetskog sektora. Na taj nacin, ucinice se prvi korak u podizanju kapaciteta<br/>
-
+      
+      
       OBNOVLJIVI IZVORI ENERGIJE<br/>
 
       Energija Biomase<br/>

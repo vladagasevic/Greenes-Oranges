@@ -180,6 +180,8 @@
 
 .ciljeviContainer {
   display: flex;
+  width: 100%;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 30px;
@@ -195,5 +197,31 @@
 
 .ciljeviTitleContainer h1 {
   font-family: 'Outfit';
-  padding: 10px;
 }
+
+.ciljeviContainerColumn {
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+}
+
+.ciljeviContainerColumn > * {
+  width: calc(100% / 3);
+}
+
+.ciljevi {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+}
+
+.ciljevi img {
+  fill: green;
+}
+
+.ciljevi h3 {
+  padding: 30px;
+}
+
