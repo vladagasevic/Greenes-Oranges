@@ -140,29 +140,30 @@ export default function Home() {
           <h1>OBNOVLJIVI IZVORI ENERGIJE</h1>
         </div>
         <div className={styles.obnovljiviIzvoriImageContainerColumn}>
+
           <div className={styles.obnovljiviIzvoriItem}>
-            <img src="Resources/Biomass.jpg" alt="" />
+            <img src="Resources/Biomass_400px.jpg" alt="" />
             <h4>Energija Biomase</h4>
           </div>
           <div className={styles.obnovljiviIzvoriItem}>
-          <img src="Resources/Geothermal.jpeg" alt="" />
-          <h4>Geotermalna Energija</h4>
+            <img src="Resources/Geothermal_400px.jpg" alt="" />
+            <h4>Geotermalna Energija</h4>
           </div>
           <div className={styles.obnovljiviIzvoriItem}>
-          <img src="Resources/Hydro-Power.jpg" alt="" />
-          <h4>Hidroenergija</h4>
+            <img src="Resources/HydroPower_400px.jpg" alt="" />
+            <h4>Hidroenergija</h4>
           </div>
           <div className={styles.obnovljiviIzvoriItem}>
-          <img src="Resources/SolarPanels.jpg" alt="" />
-          <h4>Solarni Izvori</h4>
+            <img src="Resources/SolarPanels_400px.jpg" alt="" />
+            <h4>Solarni Izvori</h4>
           </div>
           <div className={styles.obnovljiviIzvoriItem}>
-          <img src="Resources/Wind-Energy.jpg" alt="" />
-          <h4>Vetrogeneratori</h4>
+            <img src="Resources/WindEnergy_400px.jpg" alt="" />
+            <h4>Vetrogeneratori</h4>
           </div>
           <div className={styles.obnovljiviIzvoriItem}>
-          <img src="Resources/Hydrogen_Energy.jpg" alt="" />
-          <h4>Energija Vodonika</h4>
+            <img src="Resources/HydroEnergy_400px.jpg" alt="" />
+            <h4>Energija Vodonika</h4>
           </div>
 
         </div>
