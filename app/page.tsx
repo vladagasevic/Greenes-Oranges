@@ -95,7 +95,7 @@ export default function Home() {
         </div>
         <div className={styles.ciljeviContainerColumn}>
           <div className={styles.ciljevi}>
-            <img src="Resources/flag.svg" alt="OpstiiSpecificniCiljevi_Img" />
+          <span className="material-symbols-outlined" style={{ color: 'green', fontSize: '40px' }}>flag</span>
             <h3>Opšti i specifični ciljevi</h3>
             <p>
             Opsti i specificni ciljevi kao i rezultati GREENES projekta, 
@@ -107,7 +107,7 @@ export default function Home() {
             </p>
           </div>
           <div className={styles.ciljevi}>
-          <img src="Resources/linked.svg" alt="AspektDigitalizacije_Img" />
+          <span className="material-symbols-outlined" style={{ color: 'green', fontSize: '40px' }}>linked_services</span>
           <h3>Aspekt digitalizacije</h3>
           <p>
           Digitilizacija je noseci faktor GREENES projekta i provlaci 
@@ -119,7 +119,7 @@ export default function Home() {
           </p>
           </div>
           <div className={styles.ciljevi}>
-          <span className="material-symbols-outlined">verified</span>
+          <span className="material-symbols-outlined" style={{ color: 'green', fontSize: '40px' }}>verified</span>
             <h3>Nove kompetencije</h3>
             <p>
             Unapredjenjem postojece kompetencije studenata na master 
@@ -132,8 +132,21 @@ export default function Home() {
             </p>
           </div>
         </div>
-        
-        
+      </div>
+
+      <div className={styles.obnovljiviIzvoriContainer}>
+        <div className={styles.obnovljiviIzvoriTitleContainer}>
+          <hr className={styles.hr}/>
+          <h1>OBNOVLJIVI IZVORI ENERGIJE</h1>
+        </div>
+        <div className={styles.obnovljiviIzvoriImageContainerColumn}>
+
+        </div>
+
+        <div className={styles.obnovljiviIzvoriText}>
+
+        </div>
+
       </div>
       <br/>
       <br/>
