@@ -83,7 +83,85 @@
   opacity: 1;
 }
 
-/* Responsive design */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #EEEEEE;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Footer */
+
+.footerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: darkgreen;
+  background: linear-gradient(white ,#A9C8A0);
+}
+.footerText {
+  padding: 20px;
+}
+.footerSocial {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0px;
+}
+.social {
+  list-style: none;
+  display: flex;
+  margin: 1rem 0 3rem 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.social li {
+  margin: 0 10px;
+}
+
+.social img {
+  width: 30px;
+  height: auto;
+}
+
+.badge {
+  display: flex;
+  align-items:center;
+  
+}
+
+.footerBottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Outfit';
+  font-size: 20px;
+  width: 100%;
+  background: darkslategrey;
+  color: white;
+  height: 40px;
+}
+
+/*  R E S P O N S I V E  */ 
 
 @media only screen and (orientation: portrait) {
   .navbar {

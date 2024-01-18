@@ -27,12 +27,27 @@ export default function RootLayout({
               <span className="bar"></span>
           </div>
           <ul className="navbar_menu">
+            <div className="dropdown">
               <li className="navbar_item">
                   <a href="/radni_paket" className="navbar_links">RADNI PAKET</a>
+                  <div className="dropdown-content">
+                    <a href="/">Project Managment</a>
+                    <a href="/">Pripremno razvojni paket</a>
+                    <a href="/">Implementacioni paket</a>
+                    <a href="/">Disiminacioni - Eksploatacioni paket</a>
+                  </div>
               </li>
+              </div>
+              <div className="dropdown">
               <li className="navbar_item">
                   <a href="/projektna_dokumentacija" className="navbar_links">PROJEKTNA DOKUMENTACIJA</a>
+                  <div className="dropdown-content">
+                    <a href="/">Project aplikacija</a>
+                    <a href="/">Procedura upravljanja projektom</a>
+                    <a href="/">QAP Procedura</a>
+                  </div>
               </li>
+              </div>
               <li className="navbar_item">
                   <a href="/galerija" className="navbar_links">GALERIJA</a>
               </li>
@@ -48,11 +63,33 @@ export default function RootLayout({
           </ul>
       </nav>
         {children}
-        Aleksandra Medvedeva 20, Niš<br/>
-        018 588 211<br/>
-        info@akademijanis.edu.rs<br/>
-        <br/>
-        Copyright © 2023 Oranges
+        <footer>
+          <div className="footerContainer">
+            <div className="footerText">
+              <p><span className="material-symbols-outlined">location_on</span> Aleksandra Medvedeva 20, Niš</p>
+              <p><span className="material-symbols-outlined">call</span> 018 588 211</p>
+              <p><span className="material-symbols-outlined">mail</span> info@akademijanis.edu.rs</p>
+            </div>
+            <div className="footerSocial">
+              <ul className="social">
+                <li><a href="/"><img src="Resources/facebook.svg" alt="" /></a></li>
+                <li><a href="/"><img src="Resources/linkedin.svg" alt="" /></a></li>
+                <li><a href="/"><img src="Resources/instagram.svg" alt="" /></a></li>
+              </ul>
+              
+            </div>
+            <div className="badge">
+              <img className="eu" src="Resources/eu.png" alt="" />
+            
+            </div>
+    
+          </div>
+          <div className='footerBottom'>
+              <p>Copyright © 2023 Greenes</p>
+            </div>
+            
+        </footer>
+       
         <script src="index.js"></script>
       </body>
     </html>
