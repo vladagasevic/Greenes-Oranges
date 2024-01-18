@@ -168,12 +168,31 @@ export default function Home() {
 
         </div>
 
-        <div className={styles.obnovljiviIzvoriText}>
-
+        <div className={styles.nasiPartneriContainer}>
+          <div className={styles.titleContainer}>
+            <hr className={styles.hr}/>
+            <h1>NAŠI PARTNERI</h1>
+          </div>
+          <div className={styles.nasiPartneriSlider}>
+            <div>
+              <a href="https://www.energetika-mb.si/" target="_blank"><img src="Resources/EnergetikaMaribor_Color.png" alt="" /></a>
+            </div>
+            <div>
+              <a href="https://jugo-impex.com/en/" target="_blank"><img src="Resources/JugoImpex.png" alt="" /></a>
+            </div>
+            <div>
+              <a href="https://uklo.edu.mk/" target="_blank"><img src="Resources/UniverzitetKlimentOhridski.png" alt="" /></a>
+            </div>
+            <div>
+              <a href="https://www.um.si/en/home-page/" target="_blank"><img src="Resources/UniversityOfMaribor.png" alt="" /></a>
+            </div>
+            <div>
+              <a href="https://mztinzenering.com.mk/" target="_blank"><img src="Resources/mztInzenjering.png" alt="" /></a>
+            </div>
+          </div>
         </div>
-
       </div>
-      NAŠI PARTNERI<br/>
+     
     </main>
   )
 }
