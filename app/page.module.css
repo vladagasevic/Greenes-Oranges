@@ -33,7 +33,7 @@
 .slider img {
   width: 100%;
   height: auto;
-  z-index: 1;
+  /* z-index: 1; */
   display: block;
   clip-path: polygon(100% 0%, 70% 100%, 0% 100%, 0% 0%);
 }
@@ -54,7 +54,7 @@
 }
 
 .rightArrow {
-  z-index: 2;
+  /* z-index: 2; */
   color: green;
   position: absolute;
   bottom: 0;
@@ -63,7 +63,7 @@
 }
 
 .leftArrow {
-  z-index: 2;
+  /* z-index: 2; */
   color: green;
   position: absolute;
   bottom: 0;
@@ -123,7 +123,7 @@
 .whyGreenesImage img {
   width: 100%;
   height: auto;
-  z-index: 1;
+  /* z-index: 1; */
   display: block;
 }
 
@@ -172,6 +172,7 @@
   background: linear-gradient(to right, #EEEEEE, green, green, #EEEEEE);
   color: white;
   font-family: 'Outfit';
+  font-size: 20px;
 }
 
 .button:hover {

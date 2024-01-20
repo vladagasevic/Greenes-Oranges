@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react"
 //import Image from "next/image"
 import styles from "./page.module.css"
+import DigitalizacijaModal from './modal/modal'
 
 function Slides() {
   const covers = ["covers/image0_0.jpg", "covers/image0_1.jpg", "covers/image0_2.jpg"];
@@ -60,7 +61,8 @@ function Slides() {
   )
 }
 
-export default function Home() {
+export default function Home() {  
+  const [showModal, setShowModal] = useState(false);
   return (
     <main>
       <Slides/>
@@ -79,7 +81,11 @@ export default function Home() {
             na izazove klimatskih promena i akutelne energetske krize.
           </h3>
           <div className={styles.whyGreenesBtn}>
-            <a href="/" className={styles.button}>OBLASTI DIGITALIZACIJE</a>
+            {/* <button className={styles.button}>OBLAST DIGITALIZACIJE</button> */}
+            {/* <button onClick={() => setShowModal(true)} className={styles.button}>OBLAST DIGITALIZACIJE</button> */}
+            <DigitalizacijaModal />
+            {/* <a href="/" className={styles.button}>OBLASTI DIGITALIZACIJE</a> */}
+            
           </div>
         </div>
           <div className={styles.whyGreenesImageContainer}>
