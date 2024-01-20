@@ -6,7 +6,7 @@
     text-decoration: none;
     padding: 20px 20px;
     height: 100%;
-    width: 50%;
+    width: auto;
     border: none;
     outline: none;
     border-radius: 30px;
@@ -17,18 +17,72 @@
     cursor: pointer;
   }
 
-  .modal {
-    position: relative;
+  .button:hover {
+    background: green;
+  }
+
+  .modalContainer {
+    margin: 0 auto;
+    width: 900px;
+    height: auto;
     background-color: lightgrey;
-    width: 1200px;
-    height: 700px;
+    margin-top: 100px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    z-index:999;
-    overflow: auto;
-    margin-left: 100px;
-    margin-top: 100px;
-    border-radius: 10px;
+    -webkit-box-shadow:0 0 10px rgba(0,0,0,0.4);
+    -moz-box-shadow:0 0 10px rgba(0,0,0,0.4); 
+    box-shadow:0 0 10px rgba(0,0,0,0.4);
+    
+  }
+
+  .modalTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Outfit';
+    padding: 20px;
+  }
+
+  .modalText {
+    text-align: justify;
+    padding: 30px;
+  }
+
+  .closeBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* button_two */
+  .button88 {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0.7em 1.4em 0.7em 1.1em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
+    border: none;
+    box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button88:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+  }
+  
+  .button88:active {
+    box-shadow: 0 0.3em 1em -0.5em #14a73e98;
   }
