@@ -6,15 +6,11 @@ menu.addEventListener('click', function () {
     menuLinks.classList.toggle('active');
 });
 
-console.log("TEST");
+
 const galleryContainer = document.querySelector('.obnovljiviIzvoriImageContainerColumn');
 const galleryItems = galleryContainer.querySelectorAll(".obnovljiviIzvoriItem");
 const defaultItemFlex = "1 1 200px";
 const hoverItemFlex = "1 1 400px";
-
-function showAlert() {
-    alert("Test")
-}
 
 const updateGalleryItems = () => {
     galleryItems.forEach(item => {
