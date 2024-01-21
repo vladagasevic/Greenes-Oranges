@@ -1,0 +1,116 @@
+
+.hr {
+    width: 70%;
+    margin-bottom: 20px;
+    border-width: 2px;
+    border-style: solid;
+    background: linear-gradient(white, white) padding-box,
+              radial-gradient(green, #EEEEEE) border-box;
+    border-radius: 50em;
+    border: 2px solid transparent;
+}
+
+/* Head Img */
+
+.projectMgmtContainer {
+    display: flex;
+    justify-content: space-around;
+    background: #EEEEEE;
+}
+
+.projectMgmtImgContainer {
+    width: 70%;
+    overflow: hidden;
+    position: relative;
+}
+
+.projectMgmtImg {
+    display: flex;
+}
+
+.projectMgmtImg img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    clip-path: polygon(100% 0%, 70% 100%, 0% 100%, 0% 0%);
+}
+
+.projectMgmtTitle {
+    display: flex;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: right;
+    align-items: center;
+    font-size: 1.5rem;
+    bottom: 10%;
+}
+
+.projectMgmtTitle h1 {
+    font-weight: bold;
+    font-family: 'Outfit';
+}
+
+/* Text First */
+.textContainer {
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    left: 0%;
+    right: 0%;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.textFirst {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    text-align: justify;
+}
+
+.textFirst p {
+    font-family: 'Outfit';
+    font-size: 18px;
+}
+
+/* Text Second */
+.textSecond {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    text-align: justify;
+}
+
+.textSecond h2 {
+    font-family: 'Outfit';
+}
+
+.textSecondChild {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    justify-content: center;
+}
+
+.textSecondChild h3 {
+    font-family: 'Outfit';
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.textSecondChildTitle {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 30px;
+    margin-top: 0%;
+}
+
+.textSecondChildText {
+    height: 150px;
+}
