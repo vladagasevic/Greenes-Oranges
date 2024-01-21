@@ -31,7 +31,7 @@ export default function RootLayout({
               <li className="navbar_item">
                   <a href="/radni_paket" className="navbar_links">RADNI PAKET</a>
                   <div className="dropdown-content">
-                    <Link href="/project_management" target='_blank'>Project Managment</Link>
+                    <Link href="/projektna_dokumentacija/project_management" target='_blank'>Project Managment</Link>
                     <a href="/">Pripremno razvojni paket</a>
                     <a href="/">Implementacioni paket</a>
                     <a href="/">Disiminacioni - Eksploatacioni paket</a>
