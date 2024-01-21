@@ -148,35 +148,70 @@ export default function Home() {
         <div className={styles.obnovljiviIzvoriImageContainerColumn}>
 
           <div className={styles.obnovljiviIzvoriItem}>
-            <img src="Resources/Biomass_400px.jpg" alt="" />
+            <img src="Resources/Biomass_400px.jpg" alt="Biomass_Energy_Img" />
             <p>
-            Digitalizacija unapređuje proizvodnju energije iz biomase, 
-            povećava efikasnost i smanjuje negativne uticaje na okolinu. 
-            Korišćenje digitalnih tehnologija pruža mogućnost za širenje i 
-            veću integraciju biomase u energetski miks, doprinoseći 
-            održivom energetskom sektoru i smanjenju emisije štetnih gasova.
+              Digitalizacija unapređuje proizvodnju energije iz biomase, 
+              povećava efikasnost i smanjuje negativne uticaje na okolinu. 
+              Korišćenje digitalnih tehnologija pruža mogućnost za širenje i 
+              veću integraciju biomase u energetski miks, doprinoseći 
+              održivom energetskom sektoru i smanjenju emisije štetnih gasova.
             </p>
             <h4>Energija Biomase</h4>
            
           </div>
           <div className={styles.obnovljiviIzvoriItem}>
-            <img src="Resources/Geothermal_400px.jpg" alt="" />
+            <img src="Resources/Geothermal_400px.jpg" alt="Geothermal_Energy_Img" />
+            <p>
+              Digitalizacija omogućava stalno praćenje parametara geotermalnih bušotina, 
+              uključujući temperaturu, pritisak i protok fluida. 
+              Ovi podaci omogućavaju bolje upravljanje i optimizaciju rada bušotina, 
+              povećavajući proizvodnju energije i smanjujući troškove održavanja.
+            </p>
             <h4>Geotermalna Energija</h4>
           </div>
           <div className={styles.obnovljiviIzvoriItem}>
-            <img src="Resources/HydroPower_400px.jpg" alt="" />
+            <img src="Resources/HydroPower_400px.jpg" alt="HydroEnergy_Img" />
+            <p>
+              Digitalizacije pruža mogućnost za unapređenje performansi, 
+              efikasnosti i pouzdanosti hidroenergetskih sistema. 
+              Ova integracija doprinosi održivom i stabilnom snabdevanju električnom energijom, 
+              uz smanjenje negativnih uticaja na okolinu.
+            </p>
             <h4>Hidroenergija</h4>
           </div>
           <div className={styles.obnovljiviIzvoriItem}>
-            <img src="Resources/SolarPanels_400px.jpg" alt="" />
+            <img src="Resources/SolarPanels_400px.jpg" alt="SolarEnergy_Img" />
+            <p>
+              Digitalni senzori omogućavaju stalno praćenje proizvodnje 
+              električne energije fotonaponskih panela u realnom vremenu. 
+              To omogućava precizno praćenje performansi panela i identifikaciju 
+              problema ili gubitaka u proizvodnji. Na osnovu ovih podataka, 
+              moguće je optimizovati postavke sistema kako bi se povećala 
+              efikasnost i iskoristivost solarnih panela I odrediti 
+              nivo uticaja na zaštitu životne sredine
+            </p>
             <h4>Solarni Izvori</h4>
           </div>
           <div className={styles.obnovljiviIzvoriItem}>
-            <img src="Resources/WindEnergy_400px.jpg" alt="" />
+            <img src="Resources/WindEnergy_400px.jpg" alt="WindEnergy_Img" />
+            <p>
+              Integracija vetroelektrana u pametne mreže - Smart Grids - omogućava 
+              bolje upravljanje i integraciju sa drugim izvorima energije. 
+              Ovo omogućava balansiranje ponude i potražnje energije u mreži, 
+              smanjenje gubitaka i poboljšanje stabilnosti mreže.
+            </p>
             <h4>Vetrogeneratori</h4>
           </div>
           <div className={styles.obnovljiviIzvoriItem}>
-            <img src="Resources/HydroEnergy_400px.jpg" alt="" />
+            <img src="Resources/HydroEnergy_400px.jpg" alt="HydrogneEnergy_Img" />
+            <p>
+              Digitalne tehnologije omogućavaju bolje upravljanje 
+              procesima proizvodnje vodonika, bilo putem elektrolize, 
+              reakcije metana sa parom - reformacija, ili drugih metoda. 
+              Ove tehnologije omogućavaju precizno praćenje parametara 
+              procesa i optimizaciju proizvodnje kako bi se povećala 
+              efikasnost i smanjili troškovi.
+            </p>
             <h4>Energija Vodonika</h4>
           </div>
 
