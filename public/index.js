@@ -5,7 +5,8 @@ menu.addEventListener('click', function () {
     menu.classList.toggle('is-active');
     menuLinks.classList.toggle('active');
 });
-console.log("Start");
+
+// Obnovljivi izvori slider - image hover
 const galleryContainer = document.querySelector('.obnovljiviIzvoriImageContainerColumn');
 const galleryItems = galleryContainer.querySelectorAll('.obnovljiviIzvoriItem');
 const defaultItemFlex = "1 1 200px";
@@ -23,7 +24,7 @@ const updateGalleryItems = () => {
         item.style.flex = flex;
     });
 
-    galleryItems[0].isHovered = true;
+    // galleryItems[0].isHovered = true;
     updateGalleryItems();
     galleryItems.forEach((item) => {
         item.addEventListener("mouseover", () => {

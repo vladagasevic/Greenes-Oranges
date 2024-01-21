@@ -1,6 +1,6 @@
 //import { Roboto, Outfit } from 'next/font/google'
 import './globals.css'
-
+import Link from 'next/link';
 export default function RootLayout({
   children,
 }: {
@@ -31,7 +31,7 @@ export default function RootLayout({
               <li className="navbar_item">
                   <a href="/radni_paket" className="navbar_links">RADNI PAKET</a>
                   <div className="dropdown-content">
-                    <a href="/">Project Managment</a>
+                    <Link href="/project_management" target='_blank'>Project Managment</Link>
                     <a href="/">Pripremno razvojni paket</a>
                     <a href="/">Implementacioni paket</a>
                     <a href="/">Disiminacioni - Eksploatacioni paket</a>
