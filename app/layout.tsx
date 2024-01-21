@@ -52,7 +52,7 @@ export default function RootLayout({
                   <a href="/galerija" className="navbar_links">GALERIJA</a>
               </li>
               <li className="navbar_item">
-                  <a href="/partneri" className="navbar_links">PARTNERI</a>
+                  <a href="#nasiPartneri" className="navbar_links">PARTNERI</a>
               </li>
               <li className="navbar_item">
                   <a href="/kontakt" className="navbar_links">KONTAKT</a>

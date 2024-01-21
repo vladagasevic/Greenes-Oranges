@@ -220,7 +220,7 @@ export default function Home() {
         <div className={styles.nasiPartneriContainer}>
           <div className={styles.titleContainer}>
             <hr className={styles.hr}/>
-            <h1>NAŠI PARTNERI</h1>
+            <h1 id="nasiPartneri">NAŠI PARTNERI</h1>
           </div>
           <div className={styles.nasiPartneriSlider}>
             <div>
