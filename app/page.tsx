@@ -149,7 +149,15 @@ export default function Home() {
 
           <div className={styles.obnovljiviIzvoriItem}>
             <img src="Resources/Biomass_400px.jpg" alt="" />
+            <p>
+            Digitalizacija unapređuje proizvodnju energije iz biomase, 
+            povećava efikasnost i smanjuje negativne uticaje na okolinu. 
+            Korišćenje digitalnih tehnologija pruža mogućnost za širenje i 
+            veću integraciju biomase u energetski miks, doprinoseći 
+            održivom energetskom sektoru i smanjenju emisije štetnih gasova.
+            </p>
             <h4>Energija Biomase</h4>
+           
           </div>
           <div className={styles.obnovljiviIzvoriItem}>
             <img src="Resources/Geothermal_400px.jpg" alt="" />
@@ -198,7 +206,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-     
     </main>
   )
 }

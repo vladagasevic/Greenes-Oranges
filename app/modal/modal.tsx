@@ -43,7 +43,7 @@ Digitalizacija u sektoru obnovljivih izvora energije pruža brojne prednosti, uk
                         </p>
                     </div>
                     <div className={styles.closeBtn}>
-                        <button className={styles.button88} onClick={() => setShowModal(false)}>Close Modal</button>
+                        <button className={styles.button88} onClick={() => setShowModal(false)}>ZATVORI</button>
                     </div>
                     
                 </div>
