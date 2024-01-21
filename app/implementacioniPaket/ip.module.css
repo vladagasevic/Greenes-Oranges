@@ -12,30 +12,30 @@
 
 /* Head Img */
 
-.prpContainer {
+.ipContainer {
     display: flex;
     justify-content: space-around;
     background: #EEEEEE;
 }
 
-.prpImgContainer {
+.ipImgContainer {
     width: 70%;
     overflow: hidden;
     position: relative;
 }
 
-.prpImg {
+.ipImg {
     display: flex;
 }
 
-.prpImg img {
+.ipImg img {
     width: 100%;
     height: auto;
     display: flex;
     clip-path: polygon(100% 0%, 70% 100%, 0% 100%, 0% 0%);
 }
 
-.prpTitle {
+.ipTitle {
     display: flex;
     width: 50%;
     padding: 20px;
@@ -46,7 +46,7 @@
     bottom: 10%;
 }
 
-.prpTitle h1 {
+.ipTitle h1 {
     font-weight: bold;
     font-family: 'Outfit';
 }

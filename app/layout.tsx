@@ -31,10 +31,10 @@ export default function RootLayout({
               <li className="navbar_item">
                   <a href="/radni_paket" className="navbar_links">RADNI PAKET</a>
                   <div className="dropdown-content">
-                    <Link href="/projectMgmt" target='_blank'>Project Managment</Link>
-                    <Link href="/pripremnoRazvojniPaket" target='_blank'>Pripremno razvojni paket</Link>
-                    <a href="/">Implementacioni paket</a>
-                    <a href="/">Disiminacioni - Eksploatacioni paket</a>
+                    <Link href="/projectMgmt" >Project Managment</Link>
+                    <Link href="/pripremnoRazvojniPaket" >Pripremno razvojni paket</Link>
+                    <Link href="/implementacioniPaket" >Implementacioni paket</Link>
+                    <Link href="/disEksPaket">Disiminacioni - Eksploatacioni paket</Link>
                   </div>
               </li>
               </div>
@@ -42,9 +42,9 @@ export default function RootLayout({
               <li className="navbar_item">
                   <a href="/projektna_dokumentacija" className="navbar_links">PROJEKTNA DOKUMENTACIJA</a>
                   <div className="dropdown-content">
-                    <a href="/">Project aplikacija</a>
-                    <a href="/">Procedura upravljanja projektom</a>
-                    <a href="/">QAP Procedura</a>
+                    <Link href="https://greenes1.vtsnis.edu.rs/wp-content/uploads/2023/07/KA220-HED-E683AE00_final.pdf" target='_blank'>Projektna aplikacija</Link>
+                    <Link href="Resources/projektnaDokumentacija/UPRAVLJANJE_GREENES_PROJEKTNIM_PREOCEDURAMA.docx">Procedura upravljanja projektom</Link>
+                    <Link href="Resources/projektnaDokumentacija/QAP_GREENES_.docx">QAP Procedura</Link>
                   </div>
               </li>
               </div>

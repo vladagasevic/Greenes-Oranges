@@ -12,41 +12,41 @@
 
 /* Head Img */
 
-.prpContainer {
+.deContainer {
     display: flex;
     justify-content: space-around;
     background: #EEEEEE;
 }
 
-.prpImgContainer {
+.deImgContainer {
     width: 70%;
     overflow: hidden;
     position: relative;
 }
 
-.prpImg {
+.deImg {
     display: flex;
 }
 
-.prpImg img {
+.deImg img {
     width: 100%;
     height: auto;
     display: flex;
     clip-path: polygon(100% 0%, 70% 100%, 0% 100%, 0% 0%);
 }
 
-.prpTitle {
+.deTitle {
     display: flex;
     width: 50%;
     padding: 20px;
     box-sizing: border-box;
     justify-content: right;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     bottom: 10%;
 }
 
-.prpTitle h1 {
+.deTitle h1 {
     font-weight: bold;
     font-family: 'Outfit';
 }

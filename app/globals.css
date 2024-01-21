@@ -16,6 +16,10 @@
   border: 2px solid transparent;
 }
 
+a {
+  color: darkgreen;
+}
+
 /*Navbar Style*/
 
 .navbar {
