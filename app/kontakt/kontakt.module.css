@@ -1,0 +1,51 @@
+.hr {
+    width: 70%;
+    margin-bottom: 20px;
+    border-width: 2px;
+    border-style: solid;
+    background: linear-gradient(white, white) padding-box,
+              radial-gradient(green, #EEEEEE) border-box;
+    border-radius: 50em;
+    border: 2px solid transparent;
+}
+
+/* Head Img */
+
+.kontaktContainer {
+    display: flex;
+    justify-content: space-around;
+    background: #EEEEEE;
+}
+
+.kontaktImgContainer {
+    width: 70%;
+    overflow: hidden;
+    position: relative;
+}
+
+.kontaktImg {
+    display: flex;
+}
+
+.kontaktImg img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    clip-path: polygon(100% 0%, 70% 100%, 0% 100%, 0% 0%);
+}
+
+.kontaktTitle {
+    display: flex;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: right;
+    align-items: center;
+    font-size: 1.5rem;
+    bottom: 10%;
+}
+
+.kontaktTitle h1 {
+    font-weight: bold;
+    font-family: 'Outfit';
+}
