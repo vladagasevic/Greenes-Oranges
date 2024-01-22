@@ -1,3 +1,4 @@
+import { ContactForm } from './form';
 import styles from './kontakt.module.css'
 import Link from 'next/link';
 
@@ -14,6 +15,17 @@ export default function Home() {
             <h1>Kontakt</h1>
           </div>
       </div>
+      <div className={styles.kontaktContainerForm}>
+        <div className='mapContainer'>
+          <h1>MAP</h1>
+        </div>
+        <div className='formContainer'>
+          <h1>Form</h1>
+          <ContactForm />
+        </div>
+
+      </div>
+      
     </main>
   )
 }

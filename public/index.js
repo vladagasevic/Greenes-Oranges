@@ -7,8 +7,8 @@ menu.addEventListener('click', function () {
 });
 
 // Obnovljivi izvori slider - image hover
-const galleryContainer = document.querySelector('.obnovljiviIzvoriImageContainerColumn');
-const galleryItems = galleryContainer.querySelectorAll('.obnovljiviIzvoriItem');
+//const galleryContainer = document.querySelector('.obnovljiviIzvoriImageContainerColumn');
+const galleryItems = document.querySelectorAll('.obnovljiviIzvoriItem');
 const defaultItemFlex = "1 1 200px";
 const hoverItemFlex = "1 1 400px";
 
