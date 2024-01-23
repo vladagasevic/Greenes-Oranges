@@ -29,7 +29,7 @@ export default function RootLayout({
           <ul className="navbar_menu">
             <div className="dropdown">
               <li className="navbar_item">
-                  <a href="/radni_paket" className="navbar_links">RADNI PAKET</a>
+                  <a href="/" className="navbar_links">RADNI PAKET</a>
                   <div className="dropdown-content">
                     <Link href="/projectMgmt" >Project Managment</Link>
                     <Link href="/pripremnoRazvojniPaket" >Pripremno razvojni paket</Link>
@@ -40,7 +40,7 @@ export default function RootLayout({
               </div>
               <div className="dropdown">
               <li className="navbar_item">
-                  <a href="/projektna_dokumentacija" className="navbar_links">PROJEKTNA DOKUMENTACIJA</a>
+                  <a href="/" className="navbar_links">PROJEKTNA DOKUMENTACIJA</a>
                   <div className="dropdown-content">
                     <Link href="https://greenes1.vtsnis.edu.rs/wp-content/uploads/2023/07/KA220-HED-E683AE00_final.pdf" target='_blank'>Projektna aplikacija</Link>
                     <Link href="Resources/projektnaDokumentacija/UPRAVLJANJE_GREENES_PROJEKTNIM_PREOCEDURAMA.docx">Procedura upravljanja projektom</Link>
