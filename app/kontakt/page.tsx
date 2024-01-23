@@ -12,19 +12,17 @@ export default function Home() {
               </div>
           </div>
           <div className={styles.kontaktTitle}>
-            <h1>Kontakt</h1>
+            <h1>Kontaktt</h1>
           </div>
       </div>
       <div className={styles.kontaktContainerForm}>
         <div className='mapContainer'>
-          <h1>MAP</h1>
         </div>
         <div className='formContainer'>
           <ContactForm />
         </div>
 
       </div>
-      
     </main>
   )
 }

@@ -1,6 +1,7 @@
 'use client'
 import { FormEvent, useState } from "react"
 import styles from './kontakt.module.css'
+import Link from "next/link"
 
 export const ContactForm = () => {
     const [isSubmitted, setSubmitted] = useState(false)
@@ -40,9 +41,10 @@ export const ContactForm = () => {
         ></textarea>
         <div className={styles.btnContainer}>
             <button className={styles.formBtnSubmit} onSubmit={onSubmit}>Submit</button>
-            <button className={styles.formBtnAcademy}>Sajt Akademije</button>
+            <button className={styles.formBtnAcademy}><Link href="https://akademijanis.edu.rs" target='_blank'>Sajt Akademije</Link></button>
         </div>
        
       </form>)
+     
     )
   }
