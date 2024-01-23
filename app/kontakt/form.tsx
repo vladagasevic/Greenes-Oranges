@@ -35,9 +35,14 @@ export const ContactForm = () => {
         <textarea
             className={styles.formText}
             value={message}
+            placeholder="Message"
             onChange={(e) => setMessage(e.target.value)}
         ></textarea>
-        <button className={styles.formBtn} onSubmit={onSubmit}>Submit</button>
+        <div className={styles.btnContainer}>
+            <button className={styles.formBtnSubmit} onSubmit={onSubmit}>Submit</button>
+            <button className={styles.formBtnAcademy}>Sajt Akademije</button>
+        </div>
+       
       </form>)
     )
   }

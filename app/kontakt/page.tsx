@@ -20,7 +20,6 @@ export default function Home() {
           <h1>MAP</h1>
         </div>
         <div className='formContainer'>
-          <h1>Form</h1>
           <ContactForm />
         </div>
 
