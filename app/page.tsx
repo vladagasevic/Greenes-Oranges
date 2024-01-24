@@ -34,7 +34,7 @@ function Slides() {
         <div className={styles.sliderContainer}>
           <div className={styles.slider}>
             {covers.map((cover, num) => (
-              <img loading="lazy" className={styles.fade} src={cover} alt={cover} key={cover} style={{ display: num == id ? "block" : "none" }}/>
+              <img className={styles.fade} src={cover} alt={cover} key={cover} style={{ display: num == id ? "block" : "none" }}/>
             ))}
             <h1 className={styles.leftArrow}>
               <span className="material-symbols-outlined" onClick={leftClick} style={{fontSize: "48px"}}>
