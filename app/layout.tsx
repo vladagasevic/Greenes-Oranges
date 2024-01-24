@@ -51,9 +51,18 @@ export default function RootLayout({
               <li className="navbar_item">
                   <a href="/galerija" className="navbar_links">GALERIJA</a>
               </li>
+              <div className="dropdown">
               <li className="navbar_item">
                   <a href="#nasiPartneri" className="navbar_links">PARTNERI</a>
+                  <div className="dropdown-content">
+                    <Link href="https://www.energetika-mb.si/" target='_blank'>Energetika Maribor</Link>
+                    <Link href="https://jugo-impex.com/en/" target='_blank'>Jugo-Impex</Link>
+                    <Link href="https://uklo.edu.mk/" target='_blank'>Univerzitet Sv Kliment Ohridski</Link>
+                    <Link href="https://www.um.si/en/home-page/" target='_blank'>University of Maribor</Link>
+                    <Link href="https://mztinzenering.com.mk/" target='_blank'>MZT Inzenjering</Link>
+                  </div>
               </li>
+              </div>
               <li className="navbar_item">
                   <Link href="/kontakt" className="navbar_links">KONTAKT</Link>
               </li>
