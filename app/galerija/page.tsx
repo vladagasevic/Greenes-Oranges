@@ -45,6 +45,10 @@ export default function gallery() {
 
   return (
     <>
+    <div className={styles.galleryTitle}>
+      <h1>Galerija</h1>
+      <hr className={styles.hr} />
+    </div>
     <div className={styles.galleryContainer}>
       <PhotoAlbum photos={photos} layout="rows" targetRowHeight={150} onClick={({ index }) => setIndex(index)} />
 

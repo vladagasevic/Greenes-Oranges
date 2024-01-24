@@ -1,4 +1,30 @@
+.hr {
+    width: 70%;
+    margin-bottom: 20px;
+    border-width: 2px;
+    border-style: solid;
+    background: linear-gradient(white, white) padding-box,
+              radial-gradient(green, #EEEEEE) border-box;
+    border-radius: 50em;
+    border: 2px solid transparent;
+  }
+
+  .galleryTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .galleryTitle h1 {
+    font-family: 'Outfit';
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
 .galleryContainer {
     width: 80%;
     margin:0px auto;
+    padding: 20px;
 }
