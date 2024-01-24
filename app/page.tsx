@@ -1,15 +1,20 @@
 "use client";
+
 import { useState, useEffect } from "react"
 //import Image from "next/image"
+import useSWR from 'swr';
+
 import styles from "./page.module.css"
 import DigitalizacijaModal from './modal/modal'
 
 function Slides() {
-  const covers = ["covers/image0_0.jpg", "covers/image0_1.jpg", "covers/image0_2.jpg"];
+  const fetcher = (url: string) => fetch(url).then((res) => res.json());
+  const { data } = useSWR('/readcovers', fetcher);
+
   const [id, setId] = useState(0);
 
   // useEffect(() => {
-  //   setTimeout(() => setId((id + 1) % covers.length), 4000);
+  //   setTimeout(() => setId((id + 1) % data.length), 4000);
   // });
 
   // function Dot({num}: {num: number}) {
@@ -21,11 +26,11 @@ function Slides() {
   // }
 
   function leftClick() {
-      setId(id === 0 ? covers.length - 1 : id - 1);
+      setId(id === 0 ? data.length - 1 : id - 1);
    }
 
   function rightClick() {
-      setId(id === covers.length - 1 ? 0 : id + 1);
+      setId(id === data.length - 1 ? 0 : id + 1);
   }
 
   return (
@@ -33,7 +38,7 @@ function Slides() {
       <div className={styles.sliderMainContainer}>
         <div className={styles.sliderContainer}>
           <div className={styles.slider}>
-            {covers.map((cover, num) => (
+            {data && data.map((cover: string, num: number) => (
               <img className={styles.fade} src={cover} alt={cover} key={cover} style={{ display: num == id ? "block" : "none" }}/>
             ))}
             <h1 className={styles.leftArrow}>
