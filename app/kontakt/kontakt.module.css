@@ -225,3 +225,29 @@
     justify-content: center;
 
 }
+
+/* R E S P O N S I V E */
+
+@media screen and (max-width: 960px) {
+  .kontaktContainer {
+    flex-direction: column;
+  }
+
+  .kontaktImg img {
+    clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 0%);
+  }
+
+  .kontaktImgContainer {
+    width: 100%;
+  }
+
+  .kontaktTitle {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    
+}
+}

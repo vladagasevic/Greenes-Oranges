@@ -114,3 +114,30 @@
 .textSecondChildText {
     height: 150px;
 }
+
+
+/* R E S P O N S I V E */
+
+@media screen and (max-width: 960px) {
+    .deContainer {
+        flex-direction: column;
+    }
+
+    .deImgContainer {
+        width: 100%;
+    }
+
+    .deImg img {
+        clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 0%);
+    }
+
+    .deTitle {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        bottom: 10%;
+    }
+}
