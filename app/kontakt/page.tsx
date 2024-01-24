@@ -17,15 +17,15 @@ export default function Home() {
           </div>
       </div>
       <div className={styles.kontaktContainerForm}>
-       
+      <div className='mapContainer'>
+          <GoogleMaps />
+        </div>
         <div className='formContainer'>
           <ContactForm />
         </div>
 
       </div>
-      <div className='mapContainer'>
-          <GoogleMaps />
-        </div>
+      
     </main>
   )
 }

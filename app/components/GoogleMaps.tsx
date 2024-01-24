@@ -9,6 +9,7 @@ export default function GoogleMaps () {
 
     const mapRef = React.useRef<HTMLDivElement>(null);
     useEffect(() => {
+        
         const initializeMap = async() => {
             const loader = new Loader({
                 apiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY as string,
