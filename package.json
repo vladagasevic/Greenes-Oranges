@@ -17,7 +17,9 @@
     "react": "^18",
     "react-dom": "^18",
     "react-modal": "^3.16.1",
-    "swr": "^2.2.4"
+    "react-photo-album": "^2.3.0",
+    "swr": "^2.2.4",
+    "yet-another-react-lightbox": "^3.16.0"
   },
   "devDependencies": {
     "@types/node": "^20",
