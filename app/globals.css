@@ -217,7 +217,7 @@ a {
       
   }
   .navbar_menu.active {
-      /*background: black;*/
+      background:#EEEEEE;
       top: 100%;
       opacity: 1;
       transition: all 0.5s ease;

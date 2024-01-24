@@ -4,14 +4,15 @@ import React, {useEffect} from 'react';
 import { Loader } from '@googlemaps/js-api-loader';
 import styles from '../kontakt/kontakt.module.css';
 
+
 export default function GoogleMaps () {
 
     const mapRef = React.useRef<HTMLDivElement>(null);
     useEffect(() => {
         const initializeMap = async() => {
             const loader = new Loader({
-                apiKey: process.env.NEXT_PUBLIC_MAPS_API_KEY as string,
-                version: 'quartaly',
+                apiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY as string,
+                version: 'weekly',
             });
             const {Map} = await loader.importLibrary('maps');
 

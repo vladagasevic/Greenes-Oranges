@@ -220,6 +220,8 @@
 /* Google Map */
 
 .mapContainer {
-    height: 400px;
-    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
