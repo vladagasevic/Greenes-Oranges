@@ -10,8 +10,7 @@ export default function GoogleMaps () {
     useEffect(() => {
         const initializeMap = async() => {
             const loader = new Loader({
-                // apiKey: process.env.NEXT_PUBLIC_MAPS_API_KEY as string,
-                apiKey: 'AIzaSyDt72_ewSAbyC57DkJT-uGZIPYnvbtYJm8',
+                apiKey: process.env.NEXT_PUBLIC_MAPS_API_KEY as string,
                 version: 'quartaly',
             });
             const {Map} = await loader.importLibrary('maps');
@@ -26,7 +25,7 @@ export default function GoogleMaps () {
             const options: google.maps.MapOptions = {
                 center: locationInMap,
                 zoom: 15,
-                mapId: 'NEXT_MAPS_VTS',
+                mapId: 'DEMO_MAP_ID',
             };
             const map = new Map(mapRef.current as HTMLDivElement, options);
 
