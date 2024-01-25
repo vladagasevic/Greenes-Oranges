@@ -2,7 +2,7 @@
 
 import React, {useEffect} from 'react';
 import { Loader } from '@googlemaps/js-api-loader';
-import styles from '../kontakt/kontakt.module.css';
+import styles from '../[locale]/kontakt/kontakt.module.css';
 
 
 export default function GoogleMaps () {
