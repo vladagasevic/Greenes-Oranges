@@ -25,23 +25,7 @@ export default async function Home({ params: { locale } }: HomeProps) {
           </div>
           <div className={styles.textContainer}>
             <div className={styles.textFirst}>
-              <p>
-              Osnovni dokumenti koji će regulisati ovu oblast biće PMP – Project management procedures sa planom upravljanja 
-              budzetom i QAP- Quality assurance of project results. U okviru ovih dokumenta, biće detaljno opisane nadležnosti, 
-              kanali komunikacije i razradjeni mehanizmi praćenja realizacije aktivnosti kao i ocena kvalitet realizovanog. 
-              U cilju efikasnog upravljanja projektom, formiraće se dva nezavisna tela: upravljačko telo – PM tim i telo za 
-              kontrolu kvaliteta – PQAP tim. U nadležnosti PM tima, biće realizacija svih projektnih aktivnosti u skladu sa 
-              predviđenom agendom, dok će u nadležnosti PQAP tima biti evaluacija realizovanih aktivnosti i postignutih rezultata, 
-              kao i prevencija potencijlanih rizika. PM tim će biti zadužen za strateško upravljanje projektom i obezbediće da 
-              projekat napreduje u skladu sa planom rada. Ova dva tima sastojaće se od predsta-vnika PC, P1-P5 partnera, s tim 
-              što članovi jednog tima neće moći da budu članovi drugog tima. Na taj način obezbediće se nazavisno ocenjivanje i 
-              evalucija uradjenog. Radiće se redovni izveštaji o napretku realizacije projekta i izveštaji o postignutim rezultatima. 
-              Izveštavanje će biti periodično na svaka dva meseca, putem on line kanala za komunikaciju. Izveštaji o toku aktivnosti biće 
-              razmatrani na sastancima PM tima (svaka dva meseca – on line), dok će izveštaji o postignutim rezultatima biti razmatrani 
-              na sastancima PM tima i PQAP tima na sastancima koji će se održati u organizaciji partnera C, P1 i P2. 
-              Važan element praćenje toka realizacije biće transparentnost u izveštavanju i promociji rezultata. 
-              Taj efekat imaće institucionalnu, nacionalnu, i regionalnu dimenziju.
-              </p>
+              <p><FormattedMessage id="pages.projectManagement.projectManagementTekst" /></p>
             </div>
           </div>
 
