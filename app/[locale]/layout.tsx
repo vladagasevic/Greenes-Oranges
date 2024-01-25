@@ -75,7 +75,11 @@ export default async function RootLayout({ params, children }: LayoutProps) {
                   <Link href={`/${locale}/kontakt`} className="navbar_links">{intl.formatMessage({ id: "common.nav.kontakt" })}</Link>
               </li>
               <li className="navbar_item">
-                  <a href={`/${locale}`}  className="navbar_links">{intl.formatMessage({ id: "common.nav.e" })}</a>
+                  <a href="/" className="navbar_links">E-PLATFORMA</a>
+              </li>
+
+              <li className="navbar_item">
+                  <a href="/" className="navbar_links">EN</a>
               </li>
               <li className="navbar_item">
                 <LanguageSwitcher />
@@ -92,9 +96,9 @@ export default async function RootLayout({ params, children }: LayoutProps) {
             </div>
             <div className="footerSocial">
               <ul className="social">
-                <li><a href="/"><img src="Resources/facebook.svg" alt="" /></a></li>
-                <li><a href="/"><img src="Resources/linkedin.svg" alt="" /></a></li>
-                <li><a href="/"><img src="Resources/instagram.svg" alt="" /></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=61554722321344" target='_blank'><img src="Resources/facebook.svg" alt="Facebook" /></a></li>
+                <li><a href="/"><img src="Resources/linkedin.svg" alt="Linkedin" /></a></li>
+                <li><a href="/"><img src="Resources/instagram.svg" alt="Instagram" /></a></li>
               </ul>
               
             </div>

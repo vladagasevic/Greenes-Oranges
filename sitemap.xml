@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://greenes-oranges.vercel.app/sr</loc>
+  <lastmod>2024-01-25T08:21:05+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://greenes-oranges.vercel.app/sr/projectMgmt</loc>
+  <lastmod>2024-01-25T08:21:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://greenes-oranges.vercel.app/sr/pripremnoRazvojniPaket</loc>
+  <lastmod>2024-01-25T08:21:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://greenes-oranges.vercel.app/sr/implementacioniPaket</loc>
+  <lastmod>2024-01-25T08:21:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://greenes-oranges.vercel.app/sr/disEksPaket</loc>
+  <lastmod>2024-01-25T08:21:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://greenes-oranges.vercel.app/Resources/projektnaDokumentacija/UPRAVLJANJE_GREENES_PROJEKTNIM_PREOCEDURAMA.docx</loc>
+  <lastmod>2024-01-25T08:21:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://greenes-oranges.vercel.app/Resources/projektnaDokumentacija/QAP_GREENES_.docx</loc>
+  <lastmod>2024-01-25T08:21:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://greenes-oranges.vercel.app/sr/galerija</loc>
+  <lastmod>2024-01-25T08:21:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://greenes-oranges.vercel.app/sr/kontakt</loc>
+  <lastmod>2024-01-25T08:21:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://greenes-oranges.vercel.app/en</loc>
+  <lastmod>2024-01-25T08:21:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://greenes-oranges.vercel.app/en/projectMgmt</loc>
+  <lastmod>2024-01-25T08:21:05+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://greenes-oranges.vercel.app/en/pripremnoRazvojniPaket</loc>
+  <lastmod>2024-01-25T08:21:05+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://greenes-oranges.vercel.app/en/implementacioniPaket</loc>
+  <lastmod>2024-01-25T08:21:05+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://greenes-oranges.vercel.app/en/disEksPaket</loc>
+  <lastmod>2024-01-25T08:21:05+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://greenes-oranges.vercel.app/en/galerija</loc>
+  <lastmod>2024-01-25T08:21:05+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://greenes-oranges.vercel.app/en/kontakt</loc>
+  <lastmod>2024-01-25T08:21:05+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
