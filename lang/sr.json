@@ -5,7 +5,7 @@
   "common.nav.partneri": "PARTNERI",
   "common.nav.kontakt": "KONTAKT",
   "common.nav.e": "E-PLATFORMA",
-  "pages.home.greenEnergy": "GREENES development of green energy competences, for energy stability",
+  "pages.home.greenEnergy": "GREENES razvoj znanja i mogućnosti zelene energije, za energetsku stabilnost",
   "pages.home.zasto": "ZAŠTO GREENES?",
   "pages.home.zastoTekst": "Digitalizacija u sektoru obnovljivih izvora energije igra ključnu ulogu u optimizaciji, praćenju i upravljanju obnovljivim izvorima energije. Razvojem seta potrebnih kompetencija u okviru programa zaštite životne sredine, pojačaće se kvalitet i raznovrsnost stručnog kadra koji može da odgovori znanjem na iza zove klimatskih promena i aktuelne energetske krize.",
   "pages.home.oblast": "OBLAST DIGITALIZACIJE",
@@ -31,7 +31,7 @@
   "pages.home.vetrogeneratoriTekst": "Integracija vetroelektrana u pametne mreže (Smart Grids) omogućava bolje upravljanje i integraciju sa drugim izvorima energije. Ovo omogućava balansiranje ponude i potražnje energije u mreži, smanjenje gubitaka i poboljšanje stabilnosti mreže.",
   "pages.home.vodonika": "Digitalne tehnologije omogućavaju bolje upravljanje procesima proizvodnje vodonika, bilo putem elektrolize, reakcije metana sa parom (reformacija), ili drugih metoda. Ove tehnologije omogućavaju precizno praćenje parametara procesa i optimizaciju proizvodnje kako bi se povećala efikasnost i smanjili troškovi.",
   "pages.home.partneri": "NAŠI PARTNERI",
-  "pages.projectManagement.projectManagement": "Project Management",
+  "pages.projectManagement.projectManagement": "Projketni Menadžment",
   "pages.projectManagement.projectManagementTekst": "Osnovni dokumenti koji će regulisati ovu oblast biće PMP – Project management procedures sa planom upravljanja budžetom i QAP- Quality assurance of project results. U okviru ovih dokumenta, biće detaljno opisane nadležnosti, kanali komunikacije i razrađeni mehanizmi praćenja realizacije aktivnosti kao i ocena kvalitet realizovanog. U cilju efikasnog upravljanja projektom, formiraće se dva nezavisna tela: upravljačko telo – PM tim i telo za kontrolu kvaliteta – PQAP tim. U nadležnosti PM tima, biće realizacija svih projektnih aktivnosti u skladu sa predviđenom agendom, dok će u nadležnosti PQAP tima biti evaluacija realizovanih aktivnosti i postignutih rezultata, kao i prevencija potencijalnih rizika. PM tim će biti zadužen za strateško upravljanje projektom i obezbediće da projekat napreduje u skladu sa planom rada. Ova dva tima sastojaće se od predstavnika PC, P1-P5 partnera, s tim što članovi jednog tima neće moći da budu članovi drugog tima. Na taj način obezbediće se nezavisno ocenjivanje i evolucija urađenog. Radiće se redovni izveštaji o napretku realizacije projekta i izveštaji o postignutim rezultatima. Izveštavanje će biti periodično na svaka dva meseca, putem on line kanala za komunikaciju. Izveštaji o toku aktivnosti biće razmatrani na sastancima PM tima (svaka dva meseca – on line), dok će izveštaji o postignutim rezultatima biti razmatrani na sastancima PM tima i PQAP tima na sastancima koji će se održati u organizaciji partnera C, P1 i P2. Važan element praćenje toka realizacije biće transparentnost u izveštavanju i promociji rezultata. Taj efekat imaće institucionalnu, nacionalnu, i regionalnu dimenziju.",
   "pages.projectManagement.pmp": "PMP tim:",
   "pages.projectManagement.pqap": "PQAP tim:",
@@ -56,5 +56,5 @@
   "pages.disiminacioni.a41": "A.4.1. Promocije i kampanje namenjene studentima i profesorima i profesionalcima, Izrada i održavanje web stranice SEO/SEM",
   "pages.disiminacioni.a42": "A.4.2 Promocija studentskih mobilnosti",
   "pages.disiminacioni.a43": "A.4.3 Promocija e platforme i realizacija LLL kurseva",
-  "pages.disiminacioni.a44": "A.4.4 Razvoj i implementacija zelenog otiska ustanova I projekta"
+  "pages.disiminacioni.a44": "A.4.4 Razvoj i implementacija zelenog otiska ustanova i projekta"
 }
