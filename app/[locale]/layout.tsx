@@ -27,7 +27,7 @@ export default async function RootLayout({ params, children }: LayoutProps) {
     <body>
       <nav className="navbar">
           <div className="navbar_container">
-              <a href={`/${locale}`} id="navbar_logo"><img src="Resources/greenes-logo-1.png" alt="Greenes_Logo"/></a>
+              <a href={`/${locale}`} id="navbar_logo"><img src="/Resources/greenes-logo-1.png" alt="Greenes_Logo"/></a>
           </div>
           <div className="navbar_toggle" id="mobile-menu">
               <span className="bar"></span>
