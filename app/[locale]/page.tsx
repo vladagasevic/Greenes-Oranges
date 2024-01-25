@@ -161,14 +161,7 @@ export default async function Home({ params: { locale } }: HomeProps) {
             </div>
             <div className={styles.obnovljiviIzvoriItem}>
               <img src="Resources/HydroEnergy_400px.jpg" alt="HydrogneEnergy_Img" />
-              <p>
-                Digitalne tehnologije omogućavaju bolje upravljanje 
-                procesima proizvodnje vodonika, bilo putem elektrolize, 
-                reakcije metana sa parom - reformacija, ili drugih metoda. 
-                Ove tehnologije omogućavaju precizno praćenje parametara 
-                procesa i optimizaciju proizvodnje kako bi se povećala 
-                efikasnost i smanjili troškovi.
-              </p>
+              <p><FormattedMessage id="pages.home.vodonika" /></p>
               <h4>Energija Vodonika</h4>
             </div>
 
