@@ -31,7 +31,7 @@ export default async function Home({ params: { locale } }: HomeProps) {
             <GoogleMaps />
           </div>
           <div className='formContainer'>
-            <ContactForm />
+            <ContactForm a={<FormattedMessage id="pages.kontakt.hvala" />}/>
           </div>
 
         </div>

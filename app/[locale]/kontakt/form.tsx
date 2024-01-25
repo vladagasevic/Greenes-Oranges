@@ -3,7 +3,7 @@ import { FormEvent, useState } from "react"
 import styles from './kontakt.module.css'
 import Link from "next/link"
 
-export const ContactForm = () => {
+export const ContactForm = ({a}: any) => {
     const [isSubmitted, setSubmitted] = useState(false)
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
@@ -39,7 +39,7 @@ export const ContactForm = () => {
     return (
         isSubmitted ? (
             <div>
-                <h1><FormattedMessage id="pages.kontakt.hvala" /></h1>
+                <h1>{a}</h1>
             </div>
         ) : (
       <form onSubmit={onSubmit} className={styles.formContainer}>
@@ -68,7 +68,7 @@ export const ContactForm = () => {
         ></textarea>
         <div className={styles.btnContainer}>
             <button className={styles.formBtnSubmit} onSubmit={onSubmit}>Submit</button>
-            <button className={styles.formBtnAcademy}><Link href="https://akademijanis.edu.rs" target='_blank'>Sajt Akademije</Link></button>
+            <button className={styles.formBtnAcademy}><Link href="https://akademijanis.edu.rs" target='_blank'>ATVSS Site</Link></button>
         </div>
        
       </form>)
