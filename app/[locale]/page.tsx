@@ -84,6 +84,11 @@ export default async function Home({ params: { locale } }: HomeProps) {
           <h1><FormattedMessage id="pages.home.greenEnergy" /></h1>
         </div>
         <div className={styles.whyGreenesContainer}>
+        <div className={styles.whyGreenesImageContainer}>
+              <div className={styles.whyGreenesImage}>
+                <img src="Resources/whyGreenes_img.jpg" alt="Why Greenes"/>
+              </div>
+            </div>
           <div className={styles.whyGreenesTextContainer}>
             <h1><FormattedMessage id="pages.home.zasto" /></h1>
             <hr className={styles.hr}/>
@@ -96,11 +101,7 @@ export default async function Home({ params: { locale } }: HomeProps) {
               
             </div>
           </div>
-            <div className={styles.whyGreenesImageContainer}>
-              <div className={styles.whyGreenesImage}>
-                <img src="Resources/whyGreenes_img.jpg" alt="Why Greenes"/>
-              </div>
-            </div>
+            
         </div>
         <div className={styles.ciljeviContainer}>
           <div className={styles.ciljeviTitleContainer}>

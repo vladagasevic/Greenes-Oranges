@@ -413,7 +413,7 @@
   }
 .oranges h1 {
   text-align: center;
-  font-size: 16px;
+  font-size: 1.5rem;
 }
 
 .whyGreenesContainer {
@@ -437,6 +437,24 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.whyGreenesTextContainer {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.whyGreenesTextContainer h3 {
+  font-size: 1rem;
+ 
+}
+
+.obnovljiviIzvoriTitleContainer h1 {
+  font-size: 1.5rem;
+}
+
+.obnovljiviIzvoriItem {
+  width: 400px;
 }
 
 }
