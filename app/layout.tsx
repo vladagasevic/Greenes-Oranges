@@ -70,6 +70,13 @@ export default function RootLayout({
               <li className="navbar_item">
                   <a href="/" className="navbar_links">E-PLATFORMA</a>
               </li>
+              
+              <li className="navbar_item">
+                  <a href="/" className="navbar_links">EN</a>
+              </li>
+              <li className="navbar_item">
+                  <a href="/" className="navbar_links">SR</a>
+              </li>
           </ul>
       </nav>
         {children}

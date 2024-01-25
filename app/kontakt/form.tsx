@@ -9,9 +9,30 @@ export const ContactForm = () => {
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
 
-    const onSubmit = (e: FormEvent) => {
+    const onSubmit = async (e: FormEvent) => {
         e.preventDefault()
-        console.log('Data', name, email, message)
+        // const formData = new FormData(e.target);
+        // if (formData.get("favorite_color") !== "") {
+        //   // Form submission is spam
+        //   console.log("Spam on Conntact")
+        //   return;
+        // }
+
+        try{
+            const res = await fetch('/api/contact', {
+                method: 'POST',
+                body: JSON.stringify({
+                    name, email, message
+                }),
+                headers: {
+                    'content-type': 'application/json'
+                }
+            }) 
+
+        } catch(err:any) {
+            console.error('Err', err)
+        }
+        
         setSubmitted(true)
     }
 
@@ -33,6 +54,12 @@ export const ContactForm = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             type="email" placeholder='Email' />
+
+        <input
+            className={styles.orangeesPot}
+            value={""}
+            type="hidden" placeholder='Orangees' />
+
         <textarea
             className={styles.formText}
             value={message}
