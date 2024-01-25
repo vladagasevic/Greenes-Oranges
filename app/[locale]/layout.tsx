@@ -4,6 +4,7 @@ import Link from 'next/link'
 import './globals.css'
 import LanguageSwitcher from '../components/LanguageSwitcher'
 import { getIntl } from "../../lib/intl"
+import styles from 'yet-another-react-lightbox/styles.css'
 
 type LayoutProps = {
   params: { locale: string };
@@ -77,12 +78,11 @@ export default async function RootLayout({ params, children }: LayoutProps) {
               <li className="navbar_item">
                   <a href={`/${locale}`} className="navbar_links">E-PLATFORMA</a>
               </li>
-
-              {/* <li className="navbar_item">
-                  <a href="/" className="navbar_links">EN</a>
-              </li> */}
               <li className="navbar_item">
                 <LanguageSwitcher />
+              </li>
+               <li className="navbar_item">
+                  <a href="/" className="navbar_links"><hr/></a>
               </li>
           </ul>
       </nav>
@@ -114,7 +114,7 @@ export default async function RootLayout({ params, children }: LayoutProps) {
             
         </footer>
        
-        <script src="index.js"></script>
+        <script src="/index.js"></script>
       </body>
     </html>
   )
