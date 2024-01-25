@@ -17,17 +17,17 @@ function Slides() {
   const [id, setId] = useState(0);
 
   // Automatic Slider and Dots
-  useEffect(() => {
-    setTimeout(() => setId((id + 1) % data.length), 4000);
-  });
+  // useEffect(() => {
+  //   setTimeout(() => setId((id + 1) % data.length), 4000);
+  // });
 
-  function Dot({num}: {num: number}) {
-    return (
-      <span className={styles.dot} style={{ backgroundColor: num == id ? "Green" : "none" }} onClick={() => {
-        setId(num);
-      }} />
-    )
-  }
+  // function Dot({num}: {num: number}) {
+  //   return (
+  //     <span className={styles.dot} style={{ backgroundColor: num == id ? "Green" : "none" }} onClick={() => {
+  //       setId(num);
+  //     }} />
+  //   )
+  // }
 
   // Automatic Slider End
 
@@ -87,11 +87,7 @@ export default async function Home({ params: { locale } }: HomeProps) {
           <h1><FormattedMessage id="pages.home.greenEnergy" /></h1>
         </div>
         <div className={styles.whyGreenesContainer}>
-        <div className={styles.whyGreenesImageContainer}>
-              <div className={styles.whyGreenesImage}>
-                <img src="/Resources/whyGreenes_img.jpg" alt="Why Greenes"/>
-              </div>
-            </div>
+       
           <div className={styles.whyGreenesTextContainer}>
             <h1><FormattedMessage id="pages.home.zasto" /></h1>
             <hr className={styles.hr}/>
@@ -100,7 +96,11 @@ export default async function Home({ params: { locale } }: HomeProps) {
               <DigitalizacijaModal a={<FormattedMessage id="pages.home.oblast" />} b={<FormattedMessage id="pages.home.oblastTekst" />} c={<FormattedMessage id="pages.home.zatvori" />} /> 
             </div>
           </div>
-            
+          <div className={styles.whyGreenesImageContainer}>
+              <div className={styles.whyGreenesImage}>
+                <img src="/Resources/whyGreenes_img.jpg" alt="Why Greenes"/>
+              </div>
+            </div>
         </div>
         <div className={styles.ciljeviContainer}>
           <div className={styles.ciljeviTitleContainer}>

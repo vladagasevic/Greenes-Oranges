@@ -1,10 +1,12 @@
 //import { Roboto, Outfit } from 'next/font/google'
 import Link from 'next/link'
-
+import Script from 'next/script';
 import './globals.css'
 import LanguageSwitcher from '../components/LanguageSwitcher'
 import { getIntl } from "../../lib/intl"
 import styles from 'yet-another-react-lightbox/styles.css'
+import Navbar from '../components/Navbar';
+
 
 type LayoutProps = {
   params: { locale: string };
@@ -14,7 +16,7 @@ type LayoutProps = {
 export default async function RootLayout({ params, children }: LayoutProps) {
   const { locale } = params;
   const intl = await getIntl(locale);
-
+  
   return (
     <html>
       <head>
@@ -30,13 +32,13 @@ export default async function RootLayout({ params, children }: LayoutProps) {
           <div className="navbar_container">
               <a href={`/${locale}`} id="navbar_logo"><img src="/Resources/greenes-logo-1.png" alt="Greenes_Logo"/></a>
           </div>
-          <div className="navbar_toggle" id="mobile-menu">
+          <div className="navbar_toggle" id="mobile-menu" >
               <span className="bar"></span>
               <span className="bar"></span>
               <span className="bar"></span>
           </div>
           <ul className="navbar_menu">
-            <div className="dropdown">
+            <div className="dropdown" >
               <li className="navbar_item">
                   <a href={`/${locale}`} className="navbar_links">{intl.formatMessage({ id: "common.nav.radni" })}</a>
                   <div className="dropdown-content">
@@ -81,11 +83,14 @@ export default async function RootLayout({ params, children }: LayoutProps) {
               <li className="navbar_item">
                 <LanguageSwitcher />
               </li>
-               <li className="navbar_item">
+               <li className="navbar_itemhr">
                   <a href="/" className="navbar_links"><hr/></a>
               </li>
+              
+              
           </ul>
       </nav>
+     
         {children}
         <footer>
           <div className="footerContainer">
@@ -114,8 +119,21 @@ export default async function RootLayout({ params, children }: LayoutProps) {
             
         </footer>
        
-        <script src="./index.js"></script>
+        {/* <script type="text/javascript" src="Index.js"></script> */}
+        <Script id="my-script">{`
+        console.log('Hello world!');
+        const menu = document.querySelector('#mobile-menu');
+        const menuLinks = document.querySelector('.navbar_menu');
+        console.log("JS Skripta");
+        
+        menu.addEventListener('click', function () {
+            menu.classList.toggle('is-active');
+            menuLinks.classList.toggle('active');
+        });
+        `}</Script>
       </body>
     </html>
   )
 }
+
+

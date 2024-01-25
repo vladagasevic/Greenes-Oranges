@@ -176,6 +176,10 @@ a {
   height: 40px;
 }
 
+.navbar_itemhr {
+  display: none;
+}
+
 /*  R E S P O N S I V E  */ 
 
 @media only screen and (orientation: portrait) {
@@ -303,5 +307,9 @@ a {
 
   .badge {
     margin-bottom: 20px;
+  }
+
+  .navbar_itemhr {
+    display: block;
   }
 }
