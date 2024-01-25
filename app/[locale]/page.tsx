@@ -20,13 +20,13 @@ function Slides() {
     setTimeout(() => setId((id + 1) % data.length), 4000);
   });
 
-  // function Dot({num}: {num: number}) {
-  //   return (
-  //     <span className={styles.dot} style={{ backgroundColor: num == id ? "Green" : "none" }} onClick={() => {
-  //       setId(num);
-  //     }} />
-  //   )
-  // }
+  function Dot({num}: {num: number}) {
+    return (
+      <span className={styles.dot} style={{ backgroundColor: num == id ? "Green" : "none" }} onClick={() => {
+        setId(num);
+      }} />
+    )
+  }
 
   function leftClick() {
       setId(id === 0 ? data.length - 1 : id - 1);
