@@ -119,7 +119,6 @@ export default async function RootLayout({ params, children }: LayoutProps) {
             
         </footer>
        
-        {/* <script type="text/javascript" src="Index.js"></script> */}
         <Script id="my-script">{`
         console.log('Hello world!');
         const menu = document.querySelector('#mobile-menu');
