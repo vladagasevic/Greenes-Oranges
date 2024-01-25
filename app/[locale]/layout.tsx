@@ -27,7 +27,7 @@ export default async function RootLayout({ params, children }: LayoutProps) {
     <body>
       <nav className="navbar">
           <div className="navbar_container">
-              <a href="/" id="navbar_logo"><img src="Resources/greenes-logo-1.png" alt="Greenes_Logo"/></a>
+              <a href={`/${locale}`} id="navbar_logo"><img src="Resources/greenes-logo-1.png" alt="Greenes_Logo"/></a>
           </div>
           <div className="navbar_toggle" id="mobile-menu">
               <span className="bar"></span>
@@ -75,7 +75,7 @@ export default async function RootLayout({ params, children }: LayoutProps) {
                   <Link href={`/${locale}/kontakt`} className="navbar_links">{intl.formatMessage({ id: "common.nav.kontakt" })}</Link>
               </li>
               <li className="navbar_item">
-                  <a href="/" className="navbar_links">E-PLATFORMA</a>
+                  <a href={`/${locale}`} className="navbar_links">E-PLATFORMA</a>
               </li>
 
               {/* <li className="navbar_item">
@@ -97,8 +97,8 @@ export default async function RootLayout({ params, children }: LayoutProps) {
             <div className="footerSocial">
               <ul className="social">
                 <li><a href="https://www.facebook.com/profile.php?id=61554722321344" target='_blank'><img src="Resources/facebook.svg" alt="Facebook" /></a></li>
-                <li><a href="/"><img src="Resources/linkedin.svg" alt="Linkedin" /></a></li>
-                <li><a href="/"><img src="Resources/instagram.svg" alt="Instagram" /></a></li>
+                <li><a href="https://www.instagram.com/atvss_odsek_nis/"><img src="Resources/linkedin.svg" alt="Linkedin" /></a></li>
+                <li><a href=""><img src="Resources/instagram.svg" alt="Instagram" /></a></li>
               </ul>
               
             </div>
