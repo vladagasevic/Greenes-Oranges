@@ -161,8 +161,8 @@ export default async function Home({ params: { locale } }: HomeProps) {
             </div>
             <div className={styles.obnovljiviIzvoriItem}>
               <img src="Resources/HydroEnergy_400px.jpg" alt="HydrogneEnergy_Img" />
-              <p><FormattedMessage id="pages.home.vodonika" /></p>
-              <h4>Energija Vodonika</h4>
+              <p><FormattedMessage id="pages.home.vodonikaTekst" /></p>
+              <h4><FormattedMessage id="pages.home.vodonika" /></h4>
             </div>
 
           </div>
