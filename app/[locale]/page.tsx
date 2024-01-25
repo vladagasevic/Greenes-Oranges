@@ -16,6 +16,7 @@ function Slides() {
 
   const [id, setId] = useState(0);
 
+  // Automatic Slider and Dots
   useEffect(() => {
     setTimeout(() => setId((id + 1) % data.length), 4000);
   });
@@ -27,6 +28,8 @@ function Slides() {
       }} />
     )
   }
+
+  // Automatic Slider End
 
   function leftClick() {
       setId(id === 0 ? data.length - 1 : id - 1);
