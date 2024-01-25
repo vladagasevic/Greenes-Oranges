@@ -52,7 +52,7 @@ export default async function gallery({ params: { locale } }: galleryProps) {
   return (
     <IntlWrapper locale={locale}>
       <div className={styles.galleryTitle}>
-        <h1><h1><FormattedMessage id="pages.galerija" /></h1></h1>
+        <h1><FormattedMessage id="pages.galerija" /></h1>
         <hr className={styles.hr} />
       </div>
       <div className={styles.galleryContainer}>

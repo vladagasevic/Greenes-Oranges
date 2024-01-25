@@ -23,7 +23,7 @@ export default async function Home({ params: { locale } }: HomeProps) {
                 </div>
             </div>
             <div className={styles.kontaktTitle}>
-              <h1><h1><FormattedMessage id="pages.kontakt" /></h1></h1>
+              <h1>FormattedMessage id="pages.kontakt" /></h1>
             </div>
         </div>
         <div className={styles.kontaktContainerForm}>
