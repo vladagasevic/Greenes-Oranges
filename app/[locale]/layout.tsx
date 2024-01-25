@@ -57,7 +57,7 @@ export default async function RootLayout({ params, children }: LayoutProps) {
               </li>
               </div>
               <li className="navbar_item">
-                  <a href="/galerija" className="navbar_links">{intl.formatMessage({ id: "common.nav.galerija" })}</a>
+                  <a href={`/${locale}/galerija`}  className="navbar_links">{intl.formatMessage({ id: "common.nav.galerija" })}</a>
               </li>
               <div className="dropdown">
               <li className="navbar_item">
@@ -72,10 +72,10 @@ export default async function RootLayout({ params, children }: LayoutProps) {
               </li>
               </div>
               <li className="navbar_item">
-                  <Link href="/kontakt" className="navbar_links">{intl.formatMessage({ id: "common.nav.kontakt" })}</Link>
+                  <Link href={`/${locale}/kontakt`} className="navbar_links">{intl.formatMessage({ id: "common.nav.kontakt" })}</Link>
               </li>
               <li className="navbar_item">
-                  <a href="/" className="navbar_links">{intl.formatMessage({ id: "common.nav.e" })}</a>
+                  <a href={`/${locale}`}  className="navbar_links">{intl.formatMessage({ id: "common.nav.e" })}</a>
               </li>
               <li className="navbar_item">
                 <LanguageSwitcher />
