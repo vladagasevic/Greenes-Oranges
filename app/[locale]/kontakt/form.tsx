@@ -39,7 +39,7 @@ export const ContactForm = () => {
     return (
         isSubmitted ? (
             <div>
-                <h1>Hvala Vam na poruci!</h1>
+                <h1><FormattedMessage id="pages.kontakt.hvala" /></h1>
             </div>
         ) : (
       <form onSubmit={onSubmit} className={styles.formContainer}>
