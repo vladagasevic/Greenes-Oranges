@@ -78,9 +78,9 @@ export default async function RootLayout({ params, children }: LayoutProps) {
                   <a href="/" className="navbar_links">E-PLATFORMA</a>
               </li>
 
-              <li className="navbar_item">
+              {/* <li className="navbar_item">
                   <a href="/" className="navbar_links">EN</a>
-              </li>
+              </li> */}
               <li className="navbar_item">
                 <LanguageSwitcher />
               </li>
