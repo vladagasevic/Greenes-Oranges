@@ -86,7 +86,7 @@ export default async function Home({ params: { locale } }: HomeProps) {
         <div className={styles.whyGreenesContainer}>
         <div className={styles.whyGreenesImageContainer}>
               <div className={styles.whyGreenesImage}>
-                <img src="Resources/whyGreenes_img.jpg" alt="Why Greenes"/>
+                <img src="/Resources/whyGreenes_img.jpg" alt="Why Greenes"/>
               </div>
             </div>
           <div className={styles.whyGreenesTextContainer}>
@@ -135,33 +135,33 @@ export default async function Home({ params: { locale } }: HomeProps) {
           <div className={styles.obnovljiviIzvoriImageContainerColumn}>
 
             <div className={styles.obnovljiviIzvoriItem}>
-              <img src="Resources/Biomass_400px.jpg" alt="Biomass_Energy_Img" />
+              <img src="/Resources/Biomass_400px.jpg" alt="Biomass_Energy_Img" />
               <p><FormattedMessage id="pages.home.biomaseTekst" /></p>
               <h4><FormattedMessage id="pages.home.biomase" /></h4>
             
             </div>
             <div className={styles.obnovljiviIzvoriItem}>
-              <img src="Resources/Geothermal_400px.jpg" alt="Geothermal_Energy_Img" />
+              <img src="/Resources/Geothermal_400px.jpg" alt="Geothermal_Energy_Img" />
               <p><FormattedMessage id="pages.home.geotermalnaTekst" /></p>
               <h4><FormattedMessage id="pages.home.geotermalna" /></h4>
             </div>
             <div className={styles.obnovljiviIzvoriItem}>
-              <img src="Resources/HydroPower_400px.jpg" alt="HydroEnergy_Img" />
+              <img src="/Resources/HydroPower_400px.jpg" alt="HydroEnergy_Img" />
               <p><FormattedMessage id="pages.home.hidroenergijaTekst" /></p>
               <h4><FormattedMessage id="pages.home.hidroenergija" /></h4>
             </div>
             <div className={styles.obnovljiviIzvoriItem}>
-              <img src="Resources/SolarPanels_400px.jpg" alt="SolarEnergy_Img" />
+              <img src="/Resources/SolarPanels_400px.jpg" alt="SolarEnergy_Img" />
               <p><FormattedMessage id="pages.home.solarniTekst" /></p>
               <h4><FormattedMessage id="pages.home.solarni" /></h4>
             </div>
             <div className={styles.obnovljiviIzvoriItem}>
-              <img src="Resources/WindEnergy_400px.jpg" alt="WindEnergy_Img" />
+              <img src="/Resources/WindEnergy_400px.jpg" alt="WindEnergy_Img" />
               <p><FormattedMessage id="pages.home.vetrogeneratoriTekst" /></p>
               <h4><FormattedMessage id="pages.home.vetrogeneratori" /></h4>
             </div>
             <div className={styles.obnovljiviIzvoriItem}>
-              <img src="Resources/HydroEnergy_400px.jpg" alt="HydrogneEnergy_Img" />
+              <img src="/Resources/HydroEnergy_400px.jpg" alt="HydrogneEnergy_Img" />
               <p><FormattedMessage id="pages.home.vodonikaTekst" /></p>
               <h4><FormattedMessage id="pages.home.vodonika" /></h4>
             </div>
@@ -175,19 +175,19 @@ export default async function Home({ params: { locale } }: HomeProps) {
             </div>
             <div className={styles.nasiPartneriSlider}>
               <div>
-                <a href="https://www.energetika-mb.si/" target="_blank"><img src="Resources/EnergetikaMaribor_Color.png" alt="" /></a>
+                <a href="https://www.energetika-mb.si/" target="_blank"><img src="/Resources/EnergetikaMaribor_Color.png" alt="" /></a>
               </div>
               <div>
-                <a href="https://jugo-impex.com/en/" target="_blank"><img src="Resources/JugoImpex.png" alt="" /></a>
+                <a href="https://jugo-impex.com/en/" target="_blank"><img src="/Resources/JugoImpex.png" alt="" /></a>
               </div>
               <div>
-                <a href="https://uklo.edu.mk/" target="_blank"><img src="Resources/UniverzitetKlimentOhridski.png" alt="" /></a>
+                <a href="https://uklo.edu.mk/" target="_blank"><img src="/Resources/UniverzitetKlimentOhridski.png" alt="" /></a>
               </div>
               <div>
-                <a href="https://www.um.si/en/home-page/" target="_blank"><img src="Resources/UniversityOfMaribor.png" alt="" /></a>
+                <a href="https://www.um.si/en/home-page/" target="_blank"><img src="/Resources/UniversityOfMaribor.png" alt="" /></a>
               </div>
               <div>
-                <a href="https://mztinzenering.com.mk/" target="_blank"><img src="Resources/mztInzenjering.png" alt="" /></a>
+                <a href="https://mztinzenering.com.mk/" target="_blank"><img src="/Resources/mztInzenjering.png" alt="" /></a>
               </div>
             </div>
           </div>

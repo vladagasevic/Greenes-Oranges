@@ -96,14 +96,14 @@ export default async function RootLayout({ params, children }: LayoutProps) {
             </div>
             <div className="footerSocial">
               <ul className="social">
-                <li><a href="https://www.facebook.com/profile.php?id=61554722321344" target='_blank'><img src="Resources/facebook.svg" alt="Facebook" /></a></li>
-                <li><a href="https://www.instagram.com/atvss_odsek_nis/"><img src="Resources/linkedin.svg" alt="Linkedin" /></a></li>
-                <li><a href=""><img src="Resources/instagram.svg" alt="Instagram" /></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=61554722321344" target='_blank'><img src="/Resources/facebook.svg" alt="Facebook" /></a></li>
+                <li><a href="https://www.instagram.com/atvss_odsek_nis/"><img src="/Resources/linkedin.svg" alt="Linkedin" /></a></li>
+                <li><a href=""><img src="/Resources/instagram.svg" alt="Instagram" /></a></li>
               </ul>
               
             </div>
             <div className="badge">
-              <img className="eu" src="Resources/eu.png" alt="" />
+              <img className="eu" src="/Resources/eu.png" alt="" />
             
             </div>
     
