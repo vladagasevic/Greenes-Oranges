@@ -20,7 +20,7 @@ export default async function Home({ params: { locale } }: HomeProps) {
                   </div>
               </div>
               <div className={styles.projectMgmtTitle}>
-                <h1>Project Management</h1>
+                <h1><FormattedMessage id="pages.projectManagement.projectManagement" /></h1>
               </div>
           </div>
           <div className={styles.textContainer}>
