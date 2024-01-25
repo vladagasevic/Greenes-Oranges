@@ -29,7 +29,7 @@
   "pages.home.solarniTekst": "Digitalni senzori omogućavaju stalno praćenje proizvodnje električne energije foto naponskih panela u realnom vremenu. To omogućava precizno praćenje performansi panela i identifikaciju problema ili gubitaka u proizvodnji. Na osnovu ovih podataka, moguće je optimizovati postavke sistema kako bi se povećala efikasnost i iskoristivost solarnih panela i odrediti nivo uticaja na zaštitu životne sredine.",
   "pages.home.vetrogeneratori": "Vetrogeneratori",
   "pages.home.vetrogeneratoriTekst": "Integracija vetroelektrana u pametne mreže (Smart Grids) omogućava bolje upravljanje i integraciju sa drugim izvorima energije. Ovo omogućava balansiranje ponude i potražnje energije u mreži, smanjenje gubitaka i poboljšanje stabilnosti mreže.",
-  "pages.home.vodonika": "Energija Vodonika"
+  "pages.home.vodonika": "Energija Vodonika",
   "pages.home.vodonikaTekst": "Digitalne tehnologije omogućavaju bolje upravljanje procesima proizvodnje vodonika, bilo putem elektrolize, reakcije metana sa parom (reformacija), ili drugih metoda. Ove tehnologije omogućavaju precizno praćenje parametara procesa i optimizaciju proizvodnje kako bi se povećala efikasnost i smanjili troškovi.",
   "pages.home.partneri": "NAŠI PARTNERI",
   "pages.projectManagement.projectManagement": "Projeketni Menadžment",
@@ -57,16 +57,16 @@
   "pages.disiminacioni.a41": "A.4.1. Promocije i kampanje namenjene studentima i profesorima i profesionalcima, Izrada i održavanje web stranice SEO/SEM",
   "pages.disiminacioni.a42": "A.4.2 Promocija studentskih mobilnosti",
   "pages.disiminacioni.a43": "A.4.3 Promocija e platforme i realizacija LLL kurseva",
-  "pages.disiminacioni.a44": "A.4.4 Razvoj i implementacija zelenog otiska ustanova i projekta"
-  "pages.dopdown.projektna.aplikacija": "Projektna aplikacija"
-  "pages.dopdown.upravljanje.projektom": "Procedura upravljanja projektom"
-  "pages.dopdown.qap": "QAP Procedura"
-  "pages.galerija": "Galerija"
-  "pages.kontakt": "Kontakt"
-  "pages.kontakt.name": "Ime i prezime"
-  "pages.kontakt.email": "email"
-  "pages.kontakt.message": "Poruka"
-  "pages.kontakt.submit": "Podnesi"
-  "pages.kontakt.site": "Sajt Akademije"
+  "pages.disiminacioni.a44": "A.4.4 Razvoj i implementacija zelenog otiska ustanova i projekta",
+  "pages.dopdown.projektna.aplikacija": "Projektna aplikacija",
+  "pages.dopdown.upravljanje.projektom": "Procedura upravljanja projektom",
+  "pages.dopdown.qap": "QAP Procedura",
+  "pages.galerija": "Galerija",
+  "pages.kontakt": "Kontakt",
+  "pages.kontakt.name": "Ime i prezime",
+  "pages.kontakt.email": "email",
+  "pages.kontakt.message": "Poruka",
+  "pages.kontakt.submit": "Podnesi",
+  "pages.kontakt.site": "Sajt Akademije",
   "pages.kontakt.hvala": "Hvala Vam na poruci!"
 }

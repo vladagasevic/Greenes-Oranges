@@ -29,7 +29,7 @@
   "pages.home.solarniTekst": "Digital sensors allow constant monitoring of the electricity production of photovoltaic panels in real time. This allows precise monitoring of panel performance and identification of problems or losses in production. Based on these data, it is possible to optimize system settings to increase the efficiency and utilization of solar panels and determine the level of impact on environmental protection.",
   "pages.home.vetrogeneratori": "Wind turbines",
   "pages.home.vetrogeneratoriTekst": "The integration of wind farms into smart grids enables better management and integration with other energy sources. This enables balancing grid supply and demand, reducing losses and improving grid stability.",
-  "pages.home.vodonika": "Hydrogen energy"
+  "pages.home.vodonika": "Hydrogen energy",
   "pages.home.vodonikaTekst": "Digital technologies enable better management of hydrogen production processes, either through electrolysis, methane-steam reaction (reformation), or other methods. These technologies enable precise monitoring of process parameters and optimization of production in order to increase efficiency and reduce costs.",
   "pages.home.partneri": "OUR PARTNERS",
   "pages.projectManagement.projectManagement": "Project Management",
@@ -57,16 +57,16 @@
   "pages.disiminacioni.a41": "A.4.1. Promotions and campaigns intended for students and professors and professionals, Development, and maintenance of the WEBSITE SEO/SEM",
   "pages.disiminacioni.a42": "A.4.2 Promotion of student mobility",
   "pages.disiminacioni.a43": "A.4.3 Promotion of e platform and implementation of LLL courses",
-  "pages.disiminacioni.a44": "A.4.4 Development and implementation of green footprint of institutions and projects"
-  "pages.dopdown.projektna.aplikacija": "Project application"
-  "pages.dopdown.project management": "Project management procedure"
-  "pages.dopdown.qap": "QAP Procedura"
-  "pages.galerija": "Gallery"
-  "pages.contact": "Contact"
-  "pages.kontakt.name": "Name and surname"
-  "pages.kontakt.email": "email"
-  "pages.kontakt.message": "Message"
-  "pages.kontakt.submit": "Podnesi"
-  "pages.kontakt.site": "Academy Site"
+  "pages.disiminacioni.a44": "A.4.4 Development and implementation of green footprint of institutions and projects",
+  "pages.dopdown.projektna.aplikacija": "Project application",
+  "pages.dopdown.project management": "Project management procedure",
+  "pages.dopdown.qap": "QAP Procedura",
+  "pages.galerija": "Gallery",
+  "pages.contact": "Contact",
+  "pages.kontakt.name": "Name and surname",
+  "pages.kontakt.email": "email",
+  "pages.kontakt.message": "Message",
+  "pages.kontakt.submit": "Podnesi",
+  "pages.kontakt.site": "Academy Site",
   "pages.kontakt.hvala": "Thank you for your message!"
 }
