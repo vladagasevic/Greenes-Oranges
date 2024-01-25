@@ -16,9 +16,9 @@ function Slides() {
 
   const [id, setId] = useState(0);
 
-  // useEffect(() => {
-  //   setTimeout(() => setId((id + 1) % data.length), 4000);
-  // });
+  useEffect(() => {
+    setTimeout(() => setId((id + 1) % data.length), 4000);
+  });
 
   // function Dot({num}: {num: number}) {
   //   return (
@@ -94,11 +94,7 @@ export default async function Home({ params: { locale } }: HomeProps) {
             <hr className={styles.hr}/>
             <h3><FormattedMessage id="pages.home.zastoTekst" /></h3>
             <div className={styles.whyGreenesBtn}>
-              {/* <button className={styles.button}>OBLAST DIGITALIZACIJE</button> */}
-              {/* <button onClick={() => setShowModal(true)} className={styles.button}>OBLAST DIGITALIZACIJE</button> */}
-              <DigitalizacijaModal a={<FormattedMessage id="pages.home.oblast" />} b={<FormattedMessage id="pages.home.oblastTekst" />} c={<FormattedMessage id="pages.home.zatvori" />} />
-              {/* <a href="/" className={styles.button}>OBLASTI DIGITALIZACIJE</a> */}
-              
+              <DigitalizacijaModal a={<FormattedMessage id="pages.home.oblast" />} b={<FormattedMessage id="pages.home.oblastTekst" />} c={<FormattedMessage id="pages.home.zatvori" />} /> 
             </div>
           </div>
             
