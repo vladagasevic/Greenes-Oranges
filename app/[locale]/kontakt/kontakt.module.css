@@ -250,6 +250,9 @@
     justify-content: center;
     align-items: center;
     font-size: 1rem;
-    
-}
+  }
+
+  .kontaktContainerForm {
+    flex-direction: column;
+  }
 }
