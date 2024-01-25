@@ -114,7 +114,7 @@ export default async function RootLayout({ params, children }: LayoutProps) {
             
         </footer>
        
-        <script src="index.js"></script>
+        <script src="./index.js"></script>
       </body>
     </html>
   )
