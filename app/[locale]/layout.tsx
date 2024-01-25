@@ -51,8 +51,8 @@ export default async function RootLayout({ params, children }: LayoutProps) {
                   <a href={`/${locale}`} className="navbar_links">{intl.formatMessage({ id: "common.nav.projektna" })}</a>
                   <div className="dropdown-content">
                     <Link href="https://greenes1.vtsnis.edu.rs/wp-content/uploads/2023/07/KA220-HED-E683AE00_final.pdf" target='_blank'>Projektna aplikacija</Link>
-                    <Link href="Resources/projektnaDokumentacija/UPRAVLJANJE_GREENES_PROJEKTNIM_PREOCEDURAMA.docx">Procedura upravljanja projektom</Link>
-                    <Link href="Resources/projektnaDokumentacija/QAP_GREENES_.docx">QAP Procedura</Link>
+                    <Link href={`/Resources/projektnaDokumentacija/UPRAVLJANJE_GREENES_PROJEKTNIM_PREOCEDURAMA_${locale}.docx`}>Procedura upravljanja projektom</Link>
+                    <Link href={`/Resources/projektnaDokumentacija/QAP_GREENES_${locale}.docx`}>QAP Procedura</Link>
                   </div>
               </li>
               </div>

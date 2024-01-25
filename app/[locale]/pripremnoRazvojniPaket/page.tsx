@@ -37,16 +37,16 @@ export default async function Home({ params: { locale } }: HomeProps) {
               <div className={styles.textSecondChildText}>
               <h3>
                 <FormattedMessage id="pages.pripremno.a21" />
-                <Link href="/Resources/pripremnoRazvojniProjekat/Greenes_2.1.docx"><span className="material-symbols-outlined" style={{ color: 'green', fontSize: '20px' }}>download</span></Link>
+                <Link href={`/Resources/pripremnoRazvojniProjekat/Greenes_2.1_${locale}.docx`}><span className="material-symbols-outlined" style={{ color: 'green', fontSize: '20px' }}>download</span></Link>
                 <br />
                 <FormattedMessage id="pages.pripremno.a22" />
-                <Link href="/Resources/pripremnoRazvojniProjekat/Greenes_2.2.docx"><span className="material-symbols-outlined" style={{ color: 'green', fontSize: '20px' }}>download</span></Link>
+                <Link href={`/Resources/pripremnoRazvojniProjekat/Greenes_2.2_${locale}.docx`}><span className="material-symbols-outlined" style={{ color: 'green', fontSize: '20px' }}>download</span></Link>
                 <br />
                 <FormattedMessage id="pages.pripremno.a23" />
-                <Link href="/Resources/pripremnoRazvojniProjekat/Greenes_2.3.docx"><span className="material-symbols-outlined" style={{ color: 'green', fontSize: '20px' }}>download</span></Link>
+                <Link href={`/Resources/pripremnoRazvojniProjekat/Greenes_2.3_${locale}.docx`}><span className="material-symbols-outlined" style={{ color: 'green', fontSize: '20px' }}>download</span></Link>
                 <br />
                 <FormattedMessage id="pages.pripremno.a24" />
-                <Link href="/Resources/pripremnoRazvojniProjekat/Greenes_2.4.docx"><span className="material-symbols-outlined" style={{ color: 'green', fontSize: '20px' }}>download</span></Link>
+                <Link href={`/Resources/pripremnoRazvojniProjekat/Greenes_2.4_${locale}.docx`}><span className="material-symbols-outlined" style={{ color: 'green', fontSize: '20px' }}>download</span></Link>
                 <br />
                 <FormattedMessage id="pages.pripremno.a25" />
                 <br />
