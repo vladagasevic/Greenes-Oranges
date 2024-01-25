@@ -34,7 +34,7 @@ export default async function Home({ params: { locale } }: HomeProps) {
             <div className={styles.textSecond}>
               <div className={styles.textSecondChild}>
                 <div className={styles.textSecondChildTitle}>
-                  <h2>PMP tim:</h2>
+                  <h2><FormattedMessage id="pages.projectManagement.pmp" /></h2>
                 </div>
                 <div className={styles.textSecondChildText}>
                 <h3>
@@ -57,7 +57,7 @@ export default async function Home({ params: { locale } }: HomeProps) {
               </div>
               <div className={styles.textSecondChild}>
                 <div className={styles.textSecondChildTitle}>
-                  <h2>PQAP tim:</h2>
+                  <h2><FormattedMessage id="pages.projectManagement.pqap" /></h2>
                 </div>
                 <div className={styles.textSecondChildText}>
                   <h3>
@@ -78,7 +78,7 @@ export default async function Home({ params: { locale } }: HomeProps) {
               </div>
               <div className={styles.textSecondChild}>
                 <div className={styles.textSecondChildTitle}>
-                  <h2>Radni paket:</h2>
+                  <h2><FormattedMessage id="pages.projectmanagement.radni" /></h2>
                 </div>
                 <div className={styles.textSecondChildText}>
                   <h3>
