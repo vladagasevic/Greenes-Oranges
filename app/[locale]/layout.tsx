@@ -1,12 +1,19 @@
 //import { Roboto, Outfit } from 'next/font/google'
-import Link from 'next/link';
+import Link from 'next/link'
 
 import './globals.css'
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+import LanguageSwitcher from '../components/LanguageSwitcher'
+import { getIntl } from "../../lib/intl"
+
+type LayoutProps = {
+  params: { locale: string };
+  children: React.ReactNode;
+}
+
+export default async function RootLayout({ params, children }: LayoutProps) {
+  const { locale } = params;
+  const intl = await getIntl(locale);
+
   return (
     <html>
       <head>
@@ -30,18 +37,18 @@ export default function RootLayout({
           <ul className="navbar_menu">
             <div className="dropdown">
               <li className="navbar_item">
-                  <a href="/" className="navbar_links">RADNI PAKET</a>
+                  <a href={`/${locale}`} className="navbar_links">{intl.formatMessage({ id: "common.nav.radni" })}</a>
                   <div className="dropdown-content">
-                    <Link href="/projectMgmt" >Project Managment</Link>
-                    <Link href="/pripremnoRazvojniPaket" >Pripremno razvojni paket</Link>
-                    <Link href="/implementacioniPaket" >Implementacioni paket</Link>
-                    <Link href="/disEksPaket">Disiminacioni - Eksploatacioni paket</Link>
+                    <Link href={`/${locale}/projectMgmt`} >{intl.formatMessage({ id: "pages.projectManagement.projectManagement" })}</Link>
+                    <Link href={`/${locale}/pripremnoRazvojniPaket`} >{intl.formatMessage({ id: "pages.pripremno.pripremno" })}</Link>
+                    <Link href={`/${locale}/implementacioniPaket`} >{intl.formatMessage({ id: "pages.implementacioni.implementacioni" })}</Link>
+                    <Link href={`/${locale}/disEksPaket`}>{intl.formatMessage({ id: "pages.disiminacioni.disiminacioni" })}</Link>
                   </div>
               </li>
               </div>
               <div className="dropdown">
               <li className="navbar_item">
-                  <a href="/" className="navbar_links">PROJEKTNA DOKUMENTACIJA</a>
+                  <a href={`/${locale}`} className="navbar_links">{intl.formatMessage({ id: "common.nav.projektna" })}</a>
                   <div className="dropdown-content">
                     <Link href="https://greenes1.vtsnis.edu.rs/wp-content/uploads/2023/07/KA220-HED-E683AE00_final.pdf" target='_blank'>Projektna aplikacija</Link>
                     <Link href="Resources/projektnaDokumentacija/UPRAVLJANJE_GREENES_PROJEKTNIM_PREOCEDURAMA.docx">Procedura upravljanja projektom</Link>
@@ -50,11 +57,11 @@ export default function RootLayout({
               </li>
               </div>
               <li className="navbar_item">
-                  <a href="/galerija" className="navbar_links">GALERIJA</a>
+                  <a href="/galerija" className="navbar_links">{intl.formatMessage({ id: "common.nav.galerija" })}</a>
               </li>
               <div className="dropdown">
               <li className="navbar_item">
-                  <a href="#nasiPartneri" className="navbar_links">PARTNERI</a>
+                  <a href="#nasiPartneri" className="navbar_links">{intl.formatMessage({ id: "common.nav.partneri" })}</a>
                   <div className="dropdown-content">
                     <Link href="https://www.energetika-mb.si/" target='_blank'>Energetika Maribor</Link>
                     <Link href="https://jugo-impex.com/en/" target='_blank'>Jugo-Impex</Link>
@@ -65,17 +72,13 @@ export default function RootLayout({
               </li>
               </div>
               <li className="navbar_item">
-                  <Link href="/kontakt" className="navbar_links">KONTAKT</Link>
+                  <Link href="/kontakt" className="navbar_links">{intl.formatMessage({ id: "common.nav.kontakt" })}</Link>
               </li>
               <li className="navbar_item">
-                  <a href="/" className="navbar_links">E-PLATFORMA</a>
-              </li>
-              
-              <li className="navbar_item">
-                  <a href="/" className="navbar_links">EN</a>
+                  <a href="/" className="navbar_links">{intl.formatMessage({ id: "common.nav.e" })}</a>
               </li>
               <li className="navbar_item">
-                  <a href="/" className="navbar_links">SR</a>
+                <LanguageSwitcher />
               </li>
           </ul>
       </nav>
