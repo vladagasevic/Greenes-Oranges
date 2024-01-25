@@ -1,3 +1,5 @@
+"use client"
+
 import { ContactForm } from './form';
 import styles from './kontakt.module.css'
 import Link from 'next/link';
@@ -17,7 +19,7 @@ export default async function Home({ params: { locale } }: HomeProps) {
         <div className={styles.kontaktContainer}>
             <div className={styles.kontaktImgContainer}>
                 <div className={styles.kontaktImg}>
-                    <img src="Resources/kontakt.jpg" alt="Kontakt Img" />
+                    <img src="/Resources/kontakt.jpg" alt="Kontakt Img" />
                 </div>
             </div>
             <div className={styles.kontaktTitle}>
