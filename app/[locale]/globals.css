@@ -180,6 +180,26 @@ a {
   display: none;
 }
 
+.languageSwitch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:10px;
+  text-decoration: none;
+  text-transform: capitalize;
+  width: 50px;
+  border-width: 1px solid;
+  border-color: darkgreen;
+  color: darkgreen;
+  border-radius: 8px;
+  border-style: solid;
+}
+
+.languageSwitch:hover {
+  background-color: darkgreen;
+  color: white
+}
+
 /*  R E S P O N S I V E  */ 
 
 @media only screen and (orientation: portrait) {
@@ -310,6 +330,12 @@ a {
   }
 
   .navbar_itemhr {
-    display: block;
+    display: none;
   }
+
+  .languageSwitch {
+    display: inline;
+    margin: 0px 10px;
+  }
+
 }
