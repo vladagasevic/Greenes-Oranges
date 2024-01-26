@@ -21,13 +21,14 @@ function Slides() {
 
   useEffect(() => {
     if (automatic)
-     setTimeout(() => data && (setId((id + 1) % data.length)), 3500);
+      setTimeout(() => data && (setId((id + 1) % data.length)), 3500);
   });
 
   // function Dot({num}: {num: number}) {
   //   return (
   //     <span className={styles.dot} style={{ backgroundColor: num == id ? "Green" : "none" }} onClick={() => {
   //       setId(num);
+  //       setAutomatic(0);
   //     }} />
   //   )
   // }
