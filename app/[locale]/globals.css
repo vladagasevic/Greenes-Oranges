@@ -188,16 +188,16 @@ a {
   text-decoration: none;
   text-transform: capitalize;
   width: 50px;
-  border-width: 1px solid;
-  border-color: darkgreen;
-  color: darkgreen;
-  border-radius: 8px;
-  border-style: solid;
+  
 }
 
 .languageSwitch:hover {
   background-color: darkgreen;
-  color: white
+  color: white;
+  border-width: 1px solid;
+  border-color: darkgreen;
+  border-radius: 8px;
+  border-style: solid;
 }
 
 /*  R E S P O N S I V E  */ 
