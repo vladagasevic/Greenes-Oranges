@@ -5,7 +5,6 @@ import './globals.css'
 import LanguageSwitcher from '../components/LanguageSwitcher'
 import { getIntl } from "../../lib/intl"
 import styles from 'yet-another-react-lightbox/styles.css'
-import Navbar from '../components/Navbar';
 
 
 type LayoutProps = {
@@ -86,9 +85,9 @@ export default async function RootLayout({ params, children }: LayoutProps) {
                <li className="navbar_itemhr">
                   <a href="/" className="navbar_links"><hr/></a>
               </li>
-              
-              
+
           </ul>
+          
       </nav>
      
         {children}
