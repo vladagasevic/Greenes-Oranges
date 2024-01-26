@@ -30,6 +30,7 @@ a {
   font-size: 0.9rem;
   font-weight: lighter;
   position: sticky;
+  top: 0;
   z-index: 999;
   background: white;
 }
@@ -201,18 +202,6 @@ a {
 }
 
 /*  R E S P O N S I V E  */ 
-
-@media only screen and (orientation: portrait) {
-  .navbar {
-    bottom: 0;
-  }
-}
-
-@media only screen and (orientation: landscape) {
-  .navbar {
-    top: 0;
-  }
-}
 
 @media screen and (max-width: 960px) {
   .navbar {
