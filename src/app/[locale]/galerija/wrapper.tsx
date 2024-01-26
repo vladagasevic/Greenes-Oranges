@@ -1,7 +1,7 @@
 // GalleryWrapper.js
 import React from "react";
 import { FormattedMessage } from "react-intl";
-import IntlWrapper from "../../components/IntlWrapper";
+import IntlWrapper from "../../../components/IntlWrapper";
 import GalleryDisplay from "./display";
 import styles from "./galerija.module.css";
 

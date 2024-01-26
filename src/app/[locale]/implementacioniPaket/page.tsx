@@ -4,7 +4,7 @@ import styles from './ip.module.css'
 import Link from 'next/link';
 
 import { FormattedMessage } from "react-intl";
-import IntlWrapper from "../../components/IntlWrapper";
+import IntlWrapper from "../../../components/IntlWrapper";
 
 type HomeProps = {
   params: { locale: string };

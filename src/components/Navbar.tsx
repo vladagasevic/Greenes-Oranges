@@ -1,12 +1,11 @@
-// Trenutno se ne koristi //
 "use client";
+
 import { useState } from 'react'
+import Link from 'next/link'
 
 import LanguageSwitcher from '../components/LanguageSwitcher'
 import { FormattedMessage } from "react-intl";
 import IntlWrapper from "../components/IntlWrapper";
-
-import Link from 'next/link'
 
 import  styles from './Navbar.module.css';
 import '../[locale]/globals.css';
@@ -38,19 +37,19 @@ function Navbar({ params: { locale } }: NavbarProps) {
           <nav className="navbar">
             
             <div className="navbar_container">
-              <a href={`/${locale}`} id="navbar_logo"><img src="/Resources/greenes-logo-1.png" alt="Greenes_Logo"/></a>
+              <Link href={`/${locale}`} id="navbar_logo"><img src="/Resources/greenes-logo-1.png" alt="Greenes_Logo"/></Link>
             </div>
             
 
             <ul className={`${styles.navMenu} ${isActive ? styles.active : ''}`}>
               <li onClick={removeActive}>
-                <a href={`/${locale}`} className="navbar_links"><FormattedMessage id="common.nav.radni" /></a>
+                <Link href={`/${locale}`} className="navbar_links"><FormattedMessage id="common.nav.radni" /></Link>
               </li>
               <li onClick={removeActive}>
-              <a href={`/${locale}`} className="navbar_links"><FormattedMessage id="common.nav.projektna.projektna" /></a>
+              <Link href={`/${locale}`} className="navbar_links"><FormattedMessage id="common.nav.projektna.projektna" /></Link>
               </li>
               <li onClick={removeActive}>
-              <a href={`/${locale}/galerija`}  className="navbar_links"><FormattedMessage id="common.nav.galerija" /></a>
+              <Link href={`/${locale}/galerija`}  className="navbar_links"><FormattedMessage id="common.nav.galerija" /></Link>
               </li>
               <li onClick={removeActive}>
               <a href="#nasiPartneri" className="navbar_links"><FormattedMessage id="common.nav.partneri" /></a>
@@ -59,10 +58,10 @@ function Navbar({ params: { locale } }: NavbarProps) {
               <Link href={`/${locale}/kontakt`} className="navbar_links"><FormattedMessage id="common.nav.kontakt" /></Link>
               </li>
               <li onClick={removeActive}>
-              <a href={`/${locale}`} className="navbar_links"><FormattedMessage id="common.nav.e" /></a>
+              <Link href={`/${locale}`} className="navbar_links"><FormattedMessage id="common.nav.e" /></Link>
               </li>
               <li onClick={removeActive}>
-              <a href="/" className="navbar_links"><hr/></a>
+              <Link href="/" className="navbar_links"><hr/></Link>
               </li>
             </ul>
 

@@ -2,13 +2,14 @@
 
 import { useState, useEffect } from "react"
 //import Image from "next/image"
+import Link from "next/link";
+
 import useSWR from 'swr';
+import { FormattedMessage } from "react-intl";
 
 import styles from "./page.module.css"
-import DigitalizacijaModal from './modal/modal'
-
-import { FormattedMessage } from "react-intl";
-import IntlWrapper from "../components/IntlWrapper";
+import DigitalizacijaModal from '../../components/modal'
+import IntlWrapper from "../../components/IntlWrapper";
 
 function Slides() {
   const fetcher = (url: string) => fetch(url).then((res) => res.json());
@@ -180,13 +181,13 @@ export default async function Home({ params: { locale } }: HomeProps) {
             </div>
             <div className={styles.nasiPartneriSlider}>
               <div>
-                <a href="https://www.energetika-mb.si/" target="_blank"><img src="/Resources/EnergetikaMaribor_Color.png" alt="" /></a>
+                <Link href="https://www.energetika-mb.si/" target="_blank"><img src="/Resources/EnergetikaMaribor_Color.png" alt="" /></Link>
               </div>
               <div>
-                <a href="https://jugo-impex.com/en/" target="_blank"><img src="/Resources/JugoImpex.png" alt="" /></a>
+                <Link href="https://jugo-impex.com/en/" target="_blank"><img src="/Resources/JugoImpex.png" alt="" /></Link>
               </div>
               <div>
-                <a href="https://uklo.edu.mk/" target="_blank"><img src="/Resources/UniverzitetKlimentOhridski.png" alt="" /></a>
+                <Link href="https://uklo.edu.mk/" target="_blank"><img src="/Resources/UniverzitetKlimentOhridski.png" alt="" /></Link>
               </div>
               <div>
                 <a href="https://www.um.si/en/home-page/" target="_blank"><img src="/Resources/UniversityOfMaribor.png" alt="" /></a>

@@ -2,7 +2,7 @@ import React from "react";
 import { IntlProvider } from "react-intl";
 
 async function getMessages(locale: string) {
-  return await import(`../../lang/${locale}.json`);
+  return await import(`../lang/${locale}.json`);
 }
 
 type IntlWrapperProps = {

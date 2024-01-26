@@ -2,8 +2,8 @@
 import Link from 'next/link'
 import Script from 'next/script'
 
-import Navbar from '../components/Navbar'
-import LanguageSwitcher from '../components/LanguageSwitcher'
+import Navbar from '../../components/Navbar'
+import LanguageSwitcher from '../../components/LanguageSwitcher'
 import { getIntl } from "../../lib/intl"
 import './globals.css'
 
@@ -30,7 +30,7 @@ export default async function RootLayout({ params, children }: LayoutProps) {
       { /* <Navbar params={{locale: locale}} /> */ }
       <nav className="navbar">
           <div className="navbar_container">
-              <a href={`/${locale}`} id="navbar_logo"><img src="/Resources/greenes-logo-1.png" alt="Greenes_Logo"/></a>
+              <Link href={`/${locale}`} id="navbar_logo"><img src="/Resources/greenes-logo-1.png" alt="Greenes_Logo"/></Link>
           </div>
           <div className="navbar_toggle" id="mobile-menu" >
               <span className="bar"></span>
@@ -40,7 +40,7 @@ export default async function RootLayout({ params, children }: LayoutProps) {
           <ul className="navbar_menu">
             <div className="dropdown" >
               <li className="navbar_item">
-                  <a href={`/${locale}`} className="navbar_links">{intl.formatMessage({ id: "common.nav.radni" })}</a>
+                  <Link href={`/${locale}`} className="navbar_links">{intl.formatMessage({ id: "common.nav.radni" })}</Link>
                   <div className="dropdown-content">
                     <Link href={`/${locale}/projectMgmt`} >{intl.formatMessage({ id: "pages.projectManagement.projectManagement" })}</Link>
                     <Link href={`/${locale}/pripremnoRazvojniPaket`} >{intl.formatMessage({ id: "pages.pripremno.pripremno" })}</Link>
@@ -51,7 +51,7 @@ export default async function RootLayout({ params, children }: LayoutProps) {
               </div>
               <div className="dropdown">
               <li className="navbar_item">
-                  <a href={`/${locale}`} className="navbar_links">{intl.formatMessage({ id: "common.nav.projektna.projektna" })}</a>
+                  <Link href={`/${locale}`} className="navbar_links">{intl.formatMessage({ id: "common.nav.projektna.projektna" })}</Link>
                   <div className="dropdown-content">
                     <Link href="https://greenes1.vtsnis.edu.rs/wp-content/uploads/2023/07/KA220-HED-E683AE00_final.pdf" target='_blank'>{intl.formatMessage({ id: "common.nav.projektna.aplikacija" })}</Link>
                     <Link href={`/Resources/projektnaDokumentacija/UPRAVLJANJE_GREENES_PROJEKTNIM_PREOCEDURAMA_${locale}.docx`}>{intl.formatMessage({ id: "common.nav.projektna.management" })}</Link>
@@ -60,11 +60,11 @@ export default async function RootLayout({ params, children }: LayoutProps) {
               </li>
               </div>
               <li className="navbar_item">
-                  <a href={`/${locale}/galerija`}  className="navbar_links">{intl.formatMessage({ id: "common.nav.galerija" })}</a>
+                  <Link href={`/${locale}/galerija`}  className="navbar_links">{intl.formatMessage({ id: "common.nav.galerija" })}</Link>
               </li>
               <div className="dropdown">
               <li className="navbar_item">
-                  <a href="#nasiPartneri" className="navbar_links">{intl.formatMessage({ id: "common.nav.partneri" })}</a>
+                  <Link href="#nasiPartneri" className="navbar_links">{intl.formatMessage({ id: "common.nav.partneri" })}</Link>
                   <div className="dropdown-content">
                     <Link href="https://www.energetika-mb.si/" target='_blank'>Energetika Maribor</Link>
                     <Link href="https://jugo-impex.com/en/" target='_blank'>Jugo-Impex</Link>
@@ -78,13 +78,13 @@ export default async function RootLayout({ params, children }: LayoutProps) {
                   <Link href={`/${locale}/kontakt`} className="navbar_links">{intl.formatMessage({ id: "common.nav.kontakt" })}</Link>
               </li>
               <li className="navbar_item">
-                  <a href={`/${locale}`} className="navbar_links">{intl.formatMessage({ id: "common.nav.e" })}</a>
+                  <Link href={`/${locale}`} className="navbar_links">{intl.formatMessage({ id: "common.nav.e" })}</Link>
               </li>
               <li className="navbar_item">
                 <LanguageSwitcher />
               </li>
                <li className="navbar_itemhr">
-                  <a href="/" className="navbar_links"><hr/></a>
+                  <Link href="/" className="navbar_links"><hr/></Link>
               </li>
           </ul>
       </nav>
@@ -98,9 +98,9 @@ export default async function RootLayout({ params, children }: LayoutProps) {
             </div>
             <div className="footerSocial">
               <ul className="social">
-                <li><a href="https://www.facebook.com/profile.php?id=61554722321344" target='_blank'><img src="/Resources/facebook.svg" alt="Facebook" /></a></li>
-                <li><a href=""><img src="/Resources/linkedin.svg" alt="Linkedin" /></a></li>
-                <li><a href=""><img src="/Resources/instagram.svg" alt="Instagram" /></a></li>
+                <li><Link href="https://www.facebook.com/profile.php?id=61554722321344" target='_blank'><img src="/Resources/facebook.svg" alt="Facebook" /></Link></li>
+                <li><Link href=""><img src="/Resources/linkedin.svg" alt="Linkedin" /></Link></li>
+                <li><Link href=""><img src="/Resources/instagram.svg" alt="Instagram" /></Link></li>
               </ul>
               
             </div>

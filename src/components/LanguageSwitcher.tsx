@@ -1,5 +1,5 @@
 'use client';
-import '../[locale]/globals.css'
+import '../app/[locale]/globals.css'
 
 import Link from 'next/link'
 const { i18n } = require('../../i18n-config');

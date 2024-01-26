@@ -3,10 +3,10 @@
 import { ContactForm } from './form';
 import styles from './kontakt.module.css'
 import Link from 'next/link';
-import GoogleMaps from '../../components/GoogleMaps';
+import GoogleMaps from '../../../components/GoogleMaps';
 
 import { FormattedMessage } from "react-intl";
-import IntlWrapper from "../../components/IntlWrapper";
+import IntlWrapper from "../../../components/IntlWrapper";
 
 type HomeProps = {
   params: { locale: string };

@@ -1,9 +1,9 @@
 "use client"
 
-import styles from './projectMgmt.module.css'
-
 import { FormattedMessage } from "react-intl";
-import IntlWrapper from "../../components/IntlWrapper";
+
+import styles from './projectMgmt.module.css'
+import IntlWrapper from "../../../components/IntlWrapper";
 
 type HomeProps = {
   params: { locale: string };
