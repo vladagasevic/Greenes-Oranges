@@ -58,7 +58,7 @@ export const ContactForm = ({a}: any) => {
         <input
             className={styles.orangeesPot}
             value={""}
-            type="hidden" placeholder='orangees' />
+            type="hidden" placeholder='oranges' />
 
         <textarea
             className={styles.formText}
