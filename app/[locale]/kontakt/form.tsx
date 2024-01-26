@@ -12,7 +12,7 @@ export const ContactForm = ({a}: any) => {
     const onSubmit = async (e: FormEvent) => {
         e.preventDefault()
         // const formData = new FormData(e.target);
-        // if (formData.get("favorite_color") !== "") {
+        // if (formData.get("oranges") !== "") {
         //   // Form submission is spam
         //   console.log("Spam on Conntact")
         //   return;
@@ -58,7 +58,7 @@ export const ContactForm = ({a}: any) => {
         <input
             className={styles.orangeesPot}
             value={""}
-            type="hidden" placeholder='Orangees' />
+            type="hidden" placeholder='orangees' />
 
         <textarea
             className={styles.formText}
