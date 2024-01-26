@@ -52,7 +52,7 @@ function Navbar({ params: { locale } }: NavbarProps) {
               <Link href={`/${locale}/galerija`}  className="navbar_links"><FormattedMessage id="common.nav.galerija" /></Link>
               </li>
               <li onClick={removeActive}>
-              <a href="#nasiPartneri" className="navbar_links"><FormattedMessage id="common.nav.partneri" /></a>
+              <Link href="#nasiPartneri" className="navbar_links"><FormattedMessage id="common.nav.partneri" /></Link>
               </li>
               <li onClick={removeActive}>
               <Link href={`/${locale}/kontakt`} className="navbar_links"><FormattedMessage id="common.nav.kontakt" /></Link>
