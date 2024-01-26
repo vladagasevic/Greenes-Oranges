@@ -12,14 +12,17 @@ import IntlWrapper from "../components/IntlWrapper";
 
 function Slides() {
   const fetcher = (url: string) => fetch(url).then((res) => res.json());
-  const { data } = useSWR('/readcovers', fetcher);
 
+  const { data } = useSWR('/readcovers', fetcher);
   const [id, setId] = useState(0);
 
   // Automatic Slider and Dots
-  // useEffect(() => {
-  //   setTimeout(() => setId((id + 1) % data.length), 4000);
-  // });
+  const [automatic, setAutomatic] = useState(1);
+
+  useEffect(() => {
+    if (automatic)
+     setTimeout(() => data && (setId((id + 1) % data.length)), 3500);
+  });
 
   // function Dot({num}: {num: number}) {
   //   return (
@@ -33,10 +36,12 @@ function Slides() {
 
   function leftClick() {
       setId(id === 0 ? data.length - 1 : id - 1);
+      setAutomatic(0);
    }
 
   function rightClick() {
       setId(id === data.length - 1 ? 0 : id + 1);
+      setAutomatic(0);
   }
 
   return (
