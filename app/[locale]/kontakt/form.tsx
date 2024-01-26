@@ -14,7 +14,7 @@ export const ContactForm = ({a}: any) => {
         // const formData = new FormData(e.target);
         // if (formData.get("oranges") !== "") {
         //   // Form submission is spam
-        //   console.log("Spam on Conntact")
+        //   console.log("Spam on Contact")
         //   return;
         // }
 

@@ -15,9 +15,9 @@ export default function handler (req: NextApiRequest, res: NextApiResponse){
     sendSmtpEmail.subject = "My {{params.subject}}";
     // sendSmtpEmail.htmlContent = "<html><body><h1>This is my first transactional email {{params.parameter}}</h1></body></html>";
     sendSmtpEmail.htmlContent = 
-    sendSmtpEmail.sender = {"name":"Greenes Contact Form","email":"conntact@greenes1.vtsnis.edu.rs"};
+    sendSmtpEmail.sender = {"name":"Greenes Contact Form","email":"contact@greenes1.vtsnis.edu.rs"};
     sendSmtpEmail.to = [{"email":"vlada.gasha@gmail.com","name":"ITS Group Orangees"}];
-    sendSmtpEmail.replyTo = {"email":"conntact@greenes1.vtsnis.edu.rs","name":"John Doe"};
+    sendSmtpEmail.replyTo = {"email":"contact@greenes1.vtsnis.edu.rs","name":"John Doe"};
     // sendSmtpEmail.headers = {"Some-Custom-Name":"unique-id-1234"};
     sendSmtpEmail.params = {"parameter":"My param value","subject":"Contact form"};
 

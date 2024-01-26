@@ -1,11 +1,11 @@
 //import { Roboto, Outfit } from 'next/font/google'
 import Link from 'next/link'
-import Script from 'next/script';
-import './globals.css'
+import Script from 'next/script'
+
+import Navbar from '../components/Navbar'
 import LanguageSwitcher from '../components/LanguageSwitcher'
 import { getIntl } from "../../lib/intl"
-import styles from 'yet-another-react-lightbox/styles.css'
-
+import './globals.css'
 
 type LayoutProps = {
   params: { locale: string };
@@ -27,6 +27,7 @@ export default async function RootLayout({ params, children }: LayoutProps) {
         <title>Greenes</title>
     </head>
     <body>
+      { /* <Navbar params={{locale: locale}} /> */ }
       <nav className="navbar">
           <div className="navbar_container">
               <a href={`/${locale}`} id="navbar_logo"><img src="/Resources/greenes-logo-1.png" alt="Greenes_Logo"/></a>
@@ -50,11 +51,11 @@ export default async function RootLayout({ params, children }: LayoutProps) {
               </div>
               <div className="dropdown">
               <li className="navbar_item">
-                  <a href={`/${locale}`} className="navbar_links">{intl.formatMessage({ id: "common.nav.projektna" })}</a>
+                  <a href={`/${locale}`} className="navbar_links">{intl.formatMessage({ id: "common.nav.projektna.projektna" })}</a>
                   <div className="dropdown-content">
-                    <Link href="https://greenes1.vtsnis.edu.rs/wp-content/uploads/2023/07/KA220-HED-E683AE00_final.pdf" target='_blank'>Projektna aplikacija</Link>
-                    <Link href={`/Resources/projektnaDokumentacija/UPRAVLJANJE_GREENES_PROJEKTNIM_PREOCEDURAMA_${locale}.docx`}>Procedura upravljanja projektom</Link>
-                    <Link href={`/Resources/projektnaDokumentacija/QAP_GREENES_${locale}.docx`}>QAP Procedura</Link>
+                    <Link href="https://greenes1.vtsnis.edu.rs/wp-content/uploads/2023/07/KA220-HED-E683AE00_final.pdf" target='_blank'>{intl.formatMessage({ id: "common.nav.projektna.aplikacija" })}</Link>
+                    <Link href={`/Resources/projektnaDokumentacija/UPRAVLJANJE_GREENES_PROJEKTNIM_PREOCEDURAMA_${locale}.docx`}>{intl.formatMessage({ id: "common.nav.projektna.management" })}</Link>
+                    <Link href={`/Resources/projektnaDokumentacija/QAP_GREENES_${locale}.docx`}>{intl.formatMessage({ id: "common.nav.projektna.qap" })}</Link>
                   </div>
               </li>
               </div>
@@ -77,7 +78,7 @@ export default async function RootLayout({ params, children }: LayoutProps) {
                   <Link href={`/${locale}/kontakt`} className="navbar_links">{intl.formatMessage({ id: "common.nav.kontakt" })}</Link>
               </li>
               <li className="navbar_item">
-                  <a href={`/${locale}`} className="navbar_links">E-PLATFORMA</a>
+                  <a href={`/${locale}`} className="navbar_links">{intl.formatMessage({ id: "common.nav.e" })}</a>
               </li>
               <li className="navbar_item">
                 <LanguageSwitcher />
@@ -85,11 +86,8 @@ export default async function RootLayout({ params, children }: LayoutProps) {
                <li className="navbar_itemhr">
                   <a href="/" className="navbar_links"><hr/></a>
               </li>
-
           </ul>
-          
       </nav>
-     
         {children}
         <footer>
           <div className="footerContainer">
@@ -117,7 +115,6 @@ export default async function RootLayout({ params, children }: LayoutProps) {
             </div>
             
         </footer>
-       
         <Script id="my-script">{`
         console.log('Hello world!');
         const menu = document.querySelector('#mobile-menu');
