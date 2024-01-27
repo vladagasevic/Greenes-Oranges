@@ -14,7 +14,7 @@ import IntlWrapper from "../../components/IntlWrapper";
 function Slides() {
   const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
-  const { data } = useSWR('/readcovers', fetcher);
+  const { data } = useSWR('/api/readcovers', fetcher);
   const [id, setId] = useState(0);
 
   // Automatic Slider and Dots
