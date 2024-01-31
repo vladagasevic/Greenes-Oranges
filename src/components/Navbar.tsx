@@ -91,7 +91,7 @@ async function Navbar({ params: { locale } }: NavbarProps) {
                 <Link href={`/${locale}`} className="navbar_links"><FormattedMessage id="common.nav.e" /></Link>
               </li>
               <li onClick={removeActive} className="navbar_item">
-                <Link href="/" className="navbar_links"><hr/></Link>
+                <LanguageSwitcher />
               </li>
             </ul>
           </nav>
