@@ -45,7 +45,7 @@
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 1.7vw;
 }
 
 .sliderTextContainer h1 {
@@ -77,6 +77,7 @@
   align-items: center;
   justify-content: center;
   padding: 30px;
+  font-size: 1.9vw;
 }
 
 .dot {
@@ -139,16 +140,17 @@
   box-sizing: border-box;
   justify-content: left;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
 }
 
 .whyGreenesTextContainer h1 {
   font-family: 'Outfit';
   padding: 5px;
+  font-size: 2.5vw;
 }
 
 .whyGreenesTextContainer h3 {
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   font-family: 'Roboto';
   font-weight: 100;
   text-align: justify;
@@ -179,7 +181,7 @@
   background: linear-gradient(to right, #EEEEEE, green, green, #EEEEEE);
   color: white;
   font-family: 'Outfit';
-  font-size: 20px;
+  font-size: 1.5vw;
 }
 
 .button:hover {
@@ -203,10 +205,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  
 }
 
 .ciljeviTitleContainer h1 {
   font-family: 'Outfit';
+  font-size: 2.5vw;
 }
 
 .ciljeviContainerColumn {
@@ -225,6 +229,7 @@
   flex-direction: column;
   align-items: center;
   text-align: justify;
+  font-size: 1.2vw;
 }
 
 .ciljevi img {
@@ -233,6 +238,7 @@
 
 .ciljevi h3 {
   padding: 30px;
+  font-size: 1.5vw;
 }
 
 /* Obnovljivi izvori */
@@ -257,6 +263,7 @@
 
 .obnovljiviIzvoriTitleContainer h1 {
   font-family: 'Outfit';
+  font-size: 2.5vw;
 }
 
 .obnovljiviIzvoriImageContainerColumn {
@@ -334,6 +341,7 @@
 
 .titleContainer h1 {
   font-family: 'Outfit';
+  font-size: 2.5vw;
 }
 
 .nasiPartneriSlider {

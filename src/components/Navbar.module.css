@@ -2,85 +2,203 @@
 
   /* navbar */
   .navbar {
-    background-color: aliceblue;
-    padding: 10px 20px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: white;
+  }
+  
+  .navbar_container {
     display: flex;
     justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 50%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+  
+  #navbar_logo {
+    display: flex;
     align-items: center;
-    gap: 40px;
-    min-height: 70px;
+    cursor: pointer;
   }
-  
-  
-  /* logo  */
-  .logo {
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
+
+  .navbar_item {
+    height: 80px;
   }
-  
-  
+    
   /* ul  */
   .navMenu {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 60px;
+    list-style: none;
+    text-align: center;
   }
   
+  .navbar_links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    color: black;
+    position: relative;
+  }
+
+  .navbar_links:hover {
+    color: #B4CFAC;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar_links::after {
+    content: '';
+    /*height: 2px;*/
+    width: 90%;
+    border-width: 1px;
+    border-style: solid;
+    background: linear-gradient(white, white) padding-box,
+                radial-gradient(green, #EEEEEE) border-box;
+    border: 1px solid transparent;
+    position: absolute;
+    bottom: 20px;
+    opacity: 0;
+    transition: all;
+    pointer-events: none;
+  }
+  
+  .navbar_links:hover::after {
+    opacity: 1;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #EEEEEE;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
   /* media queries */
   
-  @media screen and (max-width: 780px){
+  @media screen and (max-width: 960px){
     
-    /* hamburger */
-    .hamburger {
+    .navbar {
+      display: block;
+  }
+  .navbar_container {
+      display: flex;
+      justify-content: space-between;
+      height: 80px;
+      z-index: 1;
+      width: 100%;
+      max-width: 1300px;
+      padding: 0;
+  }
+  .navMenu {
+      display: grid;
+      grid-template-columns: auto;
+      margin: 0px;
+      width: 100%;
+      position: absolute;
+      top: -1000px;
+      opacity: 1;
+      transition: all 0.5s ease;
+      height: 20vh;
+      z-index: -1;
+      
+  }
+  .navbar_menu.active {
+      background:#EEEEEE;
+      top: 100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 99;
+      height: 40vh;
+      font-size: 1rem;
+  }
+  #navbar_logo {
+      padding-left: 25px;
+
+  }
+  .navbar_toggle .bar {
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      transition: all 0.3s ease-in-out;
+      background: green;
+  }
+  .navbar_item {
+      width: 100%;
+      height: 10px;
+  }
+  .navbar_links {
+      text-align: center;
+      padding: 1rem;
+      width: 100%;
+      display: table;
+      height: 100%;
+  }
+
+  .navbar_links:hover {
+    color: #B4CFAC;
+    transition: all 0.3s ease;
+  }
+  
+  /* NavBar underline */
+  .navbar_links::after {
+    display: none;
+  }
+
+ .dropdown-content {
+  position: fixed;
+  background-color: #EEEEEE;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  
+}
+
+  .dropdown:hover .dropdown-content {
+    display: flex;
+    text-align: center;
+  }
+  
+  #mobile-menu {
+      position: absolute;
+      top: 20%;
+      right: 5%;
+      transform: translate(5%, 20%);
+      
+  }
+  .navbar_toggle .bar {
       display: block;
       cursor: pointer;
-    }
-  
-    .bar {
-          background-color: #120f0b;
-          width: 20px;
-          height: 3px;
-          display: block;
-          margin: 5px;
-          -webkit-transition: 0.3s ease-in-out;
-          transition: 0.3s ease-in-out;
-      }
-  
-    /* adding active class to the bars  */
-    .hamburger.active .bar:nth-child(2){
-      opacity: 0;
-    }
-    .hamburger.active .bar:nth-child(1){
-      transform: translateY(8px) rotate(45deg);
-    }
-    .hamburger.active .bar:nth-child(3){
-      transform: translateY(-8px) rotate(-45deg);
-    }
-  
-  
-    /* navMenu */
-  
-    .navMenu{
-      position: absolute;
-      flex-direction: column;
-      gap: 0;
-      top: 70px;
-      left: -100%;
-      text-align: start;
-      width: 100%;
-      transition: 0.7s ease-in-out;
-      background-color: aliceblue;
-      padding: 10px;
-    }
-  
-    .navMenu.active{
-      left: 0;
-    }
-  
-    .navMenu li {
-      margin: 16px 0;
-    }
+  }
   }
 
 
