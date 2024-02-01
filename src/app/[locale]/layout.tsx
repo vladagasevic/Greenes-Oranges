@@ -1,7 +1,7 @@
 //import { Roboto, Outfit } from 'next/font/google'
 import Link from 'next/link'
 
-//import { getIntl } from "../../lib/intl"
+import { getIntl } from "../../lib/intl"
 import Navbar from '../../components/Navbar'
 import './globals.css'
 
@@ -10,13 +10,28 @@ type LayoutProps = {
   children: React.ReactNode;
 }
 
-export default /* async */ function RootLayout({ params, children }: LayoutProps) {
+export default async function RootLayout({ params, children }: LayoutProps) {
   const { locale } = params;
-  //const intl = await getIntl(locale);
-  //{intl.formatMessage({ id: "common.nav.radni" })}
+  const intl = await getIntl(locale);
+
+  const navLocale = [
+    intl.formatMessage({ id: "common.nav.radni" }),
+    intl.formatMessage({ id: "pages.projectManagement.projectManagement" }),
+    intl.formatMessage({ id: "pages.pripremno.pripremno" }),
+    intl.formatMessage({ id: "pages.implementacioni.implementacioni" }),
+    intl.formatMessage({ id: "pages.disiminacioni.disiminacioni" }),
+    intl.formatMessage({ id: "common.nav.projektna.projektna" }),
+    intl.formatMessage({ id: "common.nav.projektna.aplikacija" }),
+    intl.formatMessage({ id: "common.nav.projektna.management" }),
+    intl.formatMessage({ id: "common.nav.projektna.qap" }),
+    intl.formatMessage({ id: "common.nav.galerija" }),
+    intl.formatMessage({ id: "common.nav.partneri" }),
+    intl.formatMessage({ id: "common.nav.kontakt" }),
+    intl.formatMessage({ id: "common.nav.e" })
+  ]
   
   return (
-    <html>
+    <html lang={locale}>
       <head>
         <meta charSet="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -26,7 +41,7 @@ export default /* async */ function RootLayout({ params, children }: LayoutProps
         <title>Greenes</title>
       </head>
       <body>
-        <Navbar params={{locale: locale}} />
+        <Navbar params={{locale: locale, navLocale: navLocale}} />
         {children}
         <footer>
           <div className="footerContainer">

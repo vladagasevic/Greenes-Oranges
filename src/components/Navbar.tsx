@@ -3,18 +3,15 @@
 import { useState } from 'react';
 import Link from 'next/link';
 
-import { FormattedMessage } from "react-intl";
-import IntlWrapper from "../components/IntlWrapper";
 import LanguageSwitcher from '../components/LanguageSwitcher';
-
-import  styles from './Navbar.module.css';
+import styles from './Navbar.module.css';
 // import '../app/[locale]/globals.css';
 
 type NavbarProps = {
-  params: { locale: string };
+  params: { locale: string, navLocale: String[] };
 };
 
-export default function Navbar({ params: { locale } }: NavbarProps) {
+export default function Navbar({ params: { locale, navLocale } }: NavbarProps) {
   // adding the states 
   const [isActive, setIsActive] = useState(false);
 
@@ -29,7 +26,7 @@ export default function Navbar({ params: { locale } }: NavbarProps) {
   }
  
   return (
-    <IntlWrapper locale={locale}>
+    <>
       <nav className="navbar">
         <div className={styles.navbar_container}>
           <Link href={`/${locale}`} id="navbar_logo"><img src="/Resources/greenes-logo-1.png" alt="Greenes_Logo"/></Link>
@@ -42,31 +39,31 @@ export default function Navbar({ params: { locale } }: NavbarProps) {
         <ul className={`${styles.navMenu} ${isActive ? styles.active : ''}`}>
           <div className="dropdown" >
             <li onClick={removeActive} className="navbar_item">
-              <Link href={`/${locale}`} className="navbar_links"><FormattedMessage id="common.nav.radni" /></Link>
+              <Link href={`/${locale}`} className="navbar_links">{navLocale[0]}</Link>
               <div className="dropdown-content">
-                <Link href={`/${locale}/projectMgmt`} ><FormattedMessage id="pages.projectManagement.projectManagement" /></Link>
-                <Link href={`/${locale}/pripremnoRazvojniPaket`} ><FormattedMessage id="pages.pripremno.pripremno" /></Link>
-                <Link href={`/${locale}/implementacioniPaket`} ><FormattedMessage id="pages.implementacioni.implementacioni" /></Link>
-                <Link href={`/${locale}/disEksPaket`}><FormattedMessage id="pages.disiminacioni.disiminacioni" /></Link>
+                <Link href={`/${locale}/projectMgmt`} >{navLocale[1]}</Link>
+                <Link href={`/${locale}/pripremnoRazvojniPaket`} >{navLocale[2]}</Link>
+                <Link href={`/${locale}/implementacioniPaket`} >{navLocale[3]}</Link>
+                <Link href={`/${locale}/disEksPaket`}>{navLocale[4]}</Link>
               </div>
             </li>
           </div>
             <div className="dropdown">
               <li onClick={removeActive} className="navbar_item">
-                <Link href={`/${locale}`} className="navbar_links"><FormattedMessage id="common.nav.projektna.projektna" /></Link>
+                <Link href={`/${locale}`} className="navbar_links">{navLocale[5]}</Link>
                 <div className="dropdown-content">
-                  <Link href="https://greenes1.vtsnis.edu.rs/wp-content/uploads/2023/07/KA220-HED-E683AE00_final.pdf" target='_blank'><FormattedMessage id="common.nav.projektna.aplikacija" /></Link>
-                  <Link href={`/Resources/projektnaDokumentacija/UPRAVLJANJE_GREENES_PROJEKTNIM_PREOCEDURAMA_${locale}.docx`}><FormattedMessage id="common.nav.projektna.management" /></Link>
-                  <Link href={`/Resources/projektnaDokumentacija/QAP_GREENES_${locale}.docx`}><FormattedMessage id="common.nav.projektna.qap" /></Link>
+                  <Link href="https://greenes1.vtsnis.edu.rs/wp-content/uploads/2023/07/KA220-HED-E683AE00_final.pdf" target='_blank'>{navLocale[6]}</Link>
+                  <Link href={`/Resources/projektnaDokumentacija/UPRAVLJANJE_GREENES_PROJEKTNIM_PREOCEDURAMA_${locale}.docx`}>{navLocale[7]}</Link>
+                  <Link href={`/Resources/projektnaDokumentacija/QAP_GREENES_${locale}.docx`}>{navLocale[8]}</Link>
                 </div>
               </li>
             </div>
           <li onClick={removeActive} className="navbar_item">
-            <Link href={`/${locale}/galerija`}  className="navbar_links"><FormattedMessage id="common.nav.galerija" /></Link>
+            <Link href={`/${locale}/galerija`}  className="navbar_links">{navLocale[9]}</Link>
           </li>
           <div className="dropdown">
             <li onClick={removeActive} className="navbar_item">
-              <Link href="#nasiPartneri" className="navbar_links"><FormattedMessage id="common.nav.partneri" /></Link>
+              <Link href="#nasiPartneri" className="navbar_links">{navLocale[10]}</Link>
               <div className="dropdown-content">
                 <Link href="https://www.energetika-mb.si/" target='_blank'>Energetika Maribor</Link>
                 <Link href="https://jugo-impex.com/en/" target='_blank'>Jugo-Impex</Link>
@@ -77,16 +74,16 @@ export default function Navbar({ params: { locale } }: NavbarProps) {
             </li>
           </div>
           <li onClick={removeActive} className="navbar_item">
-            <Link href={`/${locale}/kontakt`} className="navbar_links"><FormattedMessage id="common.nav.kontakt" /></Link>
+            <Link href={`/${locale}/kontakt`} className="navbar_links">{navLocale[11]}</Link>
           </li>
           <li onClick={removeActive} className="navbar_item">
-            <Link href={`/${locale}`} className="navbar_links"><FormattedMessage id="common.nav.e" /></Link>
+            <Link href={`/${locale}`} className="navbar_links">{navLocale[12]}</Link>
           </li>
           <li onClick={removeActive} className="navbar_item">
             <LanguageSwitcher />
           </li>
         </ul>
       </nav>
-    </IntlWrapper>
+    </>
   );
 };
