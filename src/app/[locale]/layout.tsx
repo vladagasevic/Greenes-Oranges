@@ -10,9 +10,10 @@ type LayoutProps = {
   children: React.ReactNode;
 }
 
-export default async function RootLayout({ params, children }: LayoutProps) {
+export default /* async */ function RootLayout({ params, children }: LayoutProps) {
   const { locale } = params;
   //const intl = await getIntl(locale);
+  //{intl.formatMessage({ id: "common.nav.radni" })}
   
   return (
     <html>
@@ -30,9 +31,9 @@ export default async function RootLayout({ params, children }: LayoutProps) {
         <footer>
           <div className="footerContainer">
             <div className="footerText">
-              <p><span className="material-symbols-outlined">location_on</span> Aleksandra Medvedeva 20, Niš</p>
-              <p><span className="material-symbols-outlined">call</span> 018 588 211</p>
-              <p><span className="material-symbols-outlined">mail</span> info@akademijanis.edu.rs</p>
+              <p><span className="material-symbols-outlined">location_on</span>Aleksandra Medvedeva 20, Niš</p>
+              <p><span className="material-symbols-outlined">call</span>018 588 211</p>
+              <p><span className="material-symbols-outlined">mail</span>info@akademijanis.edu.rs</p>
             </div>
             <div className="footerSocial">
               <ul className="social">

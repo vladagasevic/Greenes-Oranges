@@ -11,7 +11,7 @@ type HomeProps = {
   params: { locale: string };
 };
 
-export default async function Home({ params: { locale } }: HomeProps) {  
+export default function Home({ params: { locale } }: HomeProps) {  
   return (
     <IntlWrapper locale={locale}>
       <main>

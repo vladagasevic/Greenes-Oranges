@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 
-export async function GET(request: Request) {
+export function GET(request: Request) {
   const dir = path.resolve('./public', 'covers');
   const filenames = fs.readdirSync(dir);
 

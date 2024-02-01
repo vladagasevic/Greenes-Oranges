@@ -4,9 +4,7 @@ import React, {useEffect} from 'react';
 import { Loader } from '@googlemaps/js-api-loader';
 import styles from '../app/[locale]/kontakt/kontakt.module.css';
 
-
 export default function GoogleMaps () {
-
     const mapRef = React.useRef<HTMLDivElement>(null);
     useEffect(() => {
         

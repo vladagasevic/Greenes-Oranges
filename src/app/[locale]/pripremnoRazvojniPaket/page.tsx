@@ -10,7 +10,7 @@ type HomeProps = {
   params: { locale: string };
 };
 
-export default async function Home({ params: { locale } }: HomeProps) {  
+export default function Home({ params: { locale } }: HomeProps) {  
   return (
     <IntlWrapper locale={locale}>
       <main>
@@ -52,7 +52,7 @@ export default async function Home({ params: { locale } }: HomeProps) {
                   <FormattedMessage id="pages.pripremno.a26" />
                   <br />
                   <FormattedMessage id="pages.pripremno.a27" />
-              </h3>
+                </h3>
               </div>
             </div>    
           </div>

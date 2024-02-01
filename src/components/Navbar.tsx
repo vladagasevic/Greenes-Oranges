@@ -14,7 +14,7 @@ type NavbarProps = {
   params: { locale: string };
 };
 
-export default async function Navbar({ params: { locale } }: NavbarProps) {
+export default function Navbar({ params: { locale } }: NavbarProps) {
   // adding the states 
   const [isActive, setIsActive] = useState(false);
 
