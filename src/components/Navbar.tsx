@@ -31,13 +31,13 @@ export default async function Navbar({ params: { locale } }: NavbarProps) {
   return (
     <IntlWrapper locale={locale}>
       <nav className="navbar">
-        <div className={`${styles.navbar_container}`}>
+        <div className={styles.navbar_container}>
           <Link href={`/${locale}`} id="navbar_logo"><img src="/Resources/greenes-logo-1.png" alt="Greenes_Logo"/></Link>
         </div>
-        <div className={`${styles.navbar_toggle} ${isActive ? styles.active : ''}`}  onClick={toggleActiveClass} id="mobile-menu">
-          <span className={`${styles.bar}`}></span>
-          <span className={`${styles.bar}`}></span>
-          <span className={`${styles.bar}`}></span>
+        <div className={`${styles.navbar_toggle} ${isActive ? styles.active : ''}`} onClick={toggleActiveClass} id="mobile-menu">
+          <span className={styles.bar}></span>
+          <span className={styles.bar}></span>
+          <span className={styles.bar}></span>
         </div>
         <ul className={`${styles.navMenu} ${isActive ? styles.active : ''}`}>
           <div className="dropdown" >
