@@ -23,13 +23,13 @@ export default function DigitalizacijaModal({ params: { modalLocale } }: ModalPr
         >
         <div className={styles.modalContent}>
           <div className={styles.modalTitle}>
-          <h1>{modalLocale[0]}</h1>
+            <h1>{modalLocale[0]}</h1>
           </div>
           <div className={styles.modalText}>
-          <p>{modalLocale[1]}</p>
+            <p>{modalLocale[1]}</p>
           </div>
           <div className={styles.closeBtn}>
-          <button className={styles.button88} onClick={() => setShowModal(false)}>{modalLocale[2]}</button>
+            <button className={styles.button88} onClick={() => setShowModal(false)}>{modalLocale[2]}</button>
           </div>
         </div>
       </Modal>
