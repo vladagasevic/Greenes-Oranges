@@ -1,0 +1,87 @@
+.sliderMainContainer {
+  display: flex;
+  justify-content: space-around;
+  background: #EEEEEE;
+}
+
+.sliderContainer {
+  width: 70%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+  /* z-index: 1; */
+  display: block;
+  clip-path: polygon(100% 0%, 70% 100%, 0% 100%, 0% 0%);
+}
+
+.sliderTextContainer {
+  display: flex;
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7vw;
+}
+
+.sliderTextContainer h1 {
+  font-weight: bold;
+  font-family: 'Outfit';
+}
+
+.rightArrow {
+  /* z-index: 2; */
+  color: green;
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  cursor: pointer;
+}
+
+.leftArrow {
+  /* z-index: 2; */
+  color: green;
+  position: absolute;
+  bottom: 0;
+  right: 15%;
+  cursor: pointer;
+}
+
+.oranges h1 {
+  font-family: 'Outfit';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  font-size: 1.9vw;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 5px 2px;
+  background-color: #D2E8FF;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color .6s ease;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

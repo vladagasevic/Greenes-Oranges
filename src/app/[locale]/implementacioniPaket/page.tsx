@@ -1,7 +1,7 @@
 "use client"
 
 import styles from './ip.module.css'
-import Link from 'next/link';
+//import Link from 'next/link';
 
 import { FormattedMessage } from "react-intl";
 import IntlWrapper from "../../../components/IntlWrapper";
