@@ -83,7 +83,7 @@ type HomeProps = {
   params: { locale: string };
 };
 
-export default async function Home({ params: { locale } }: HomeProps) {  
+export default function Home({ params: { locale } }: HomeProps) {  
   const [showModal, setShowModal] = useState(false);
 
   return (
