@@ -1,4 +1,3 @@
-'use client';
 import '../app/[locale]/globals.css'
 
 import Link from 'next/link'
