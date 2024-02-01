@@ -12,11 +12,6 @@ type HomeProps = {
 
 export default async function Home({ params: { locale } }: HomeProps) {  
   const intl = await getIntl(locale);
-  const modalLocale = [
-    intl.formatMessage({ id: "pages.home.oblast" }),
-    intl.formatMessage({ id: "pages.home.oblastTekst" }),
-    intl.formatMessage({ id: "pages.home.zatvori" })
-  ]
 
   return (
     <main>
@@ -30,7 +25,7 @@ export default async function Home({ params: { locale } }: HomeProps) {
           <hr className={styles.hr}/>
           <h3>{intl.formatMessage({ id: "pages.home.zastoTekst" })}</h3>
           <div className={styles.whyGreenesBtn}>
-            <DigitalizacijaModal params={{modalLocale: modalLocale}} /> 
+            <DigitalizacijaModal params={{locale: locale}} /> 
           </div>
         </div>
         <div className={styles.whyGreenesImageContainer}>
