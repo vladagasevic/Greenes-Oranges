@@ -26,8 +26,9 @@ export default function Home({ params: { locale } }: HomeProps) {
           </div>
         </div>
         <div className={styles.kontaktContainerForm}>
-          <div className='mapContainer'>
-              <GoogleMaps />
+          <div className={styles.mapContainer}>
+              <img src="/Resources/GoogleMap_Placeholder.png" alt="" /><p>Map Placeholder</p>
+              {/* <GoogleMaps /> */}
           </div>
           <div className='formContainer'>
             <ContactForm a={<FormattedMessage id="pages.kontakt.hvala" />}/>
