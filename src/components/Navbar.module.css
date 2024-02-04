@@ -131,7 +131,7 @@
       z-index: -1;
       
   }
-  .navbar_menu.active {
+  .navMenu.active {
       background:#EEEEEE;
       top: 100%;
       opacity: 1;
