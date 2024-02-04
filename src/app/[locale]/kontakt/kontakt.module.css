@@ -229,6 +229,7 @@
 .mapContainer img {
   width: 400px;
   height: auto;
+  border-radius: 20px;
 }
 
 /* R E S P O N S I V E */
