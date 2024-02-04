@@ -6,6 +6,11 @@
 
 }
 
+body {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
 .hr {
   width: 70%;
   margin-bottom: 20px;
