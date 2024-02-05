@@ -1,4 +1,4 @@
-'use client'
+// 'use client'
 import { FormEvent, useState } from "react"
 import styles from './kontakt.module.css'
 import Link from "next/link"
