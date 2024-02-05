@@ -229,6 +229,7 @@
 .obnovljiviIzvoriItem:hover {
   width: 400px;
 }
+
 .obnovljiviIzvoriItem:hover img {
   opacity: 20%;
 }
@@ -281,107 +282,47 @@
 /* R E S P O N S I V E */
 
 @media screen and (max-width: 960px) {
-  .sliderMainContainer {
+  .oranges h1 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .whyGreenesContainer {
+    display: flex;
     flex-direction: column;
   }
 
-  .sliderContainer {
-    width: 100%;
-  }
-
-  .slider img {
-    width: 100%;
-    height: auto;
-    /* z-index: 1; */
-    display: block;
-    clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 0%);
-  }
-  
-  .sliderTextContainer {
+  .ciljeviContainerColumn { 
     display: flex;
-    width: 50%;
-    padding: 20px;
-    box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-  }
-  
-  .sliderTextContainer h1 {
-    font-weight: bold;
-    font-family: 'Outfit';
-  }
-
-  .rightArrow {
-    /* z-index: 2; */
-    color: white;
-    position: absolute;
-    bottom: 0;
-    right: 10%;
-    cursor: pointer;
-  }
-  
-  .leftArrow {
-    /* z-index: 2; */
-    color: white;
-    position: absolute;
-    bottom: 0;
-    right: 15%;
-    cursor: pointer;
-  }
-
-  .sliderTextContainer {
+    flex-direction: column;
     width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
   }
-.oranges h1 {
-  text-align: center;
-  font-size: 1.5rem;
-}
 
-.whyGreenesContainer {
-  display: flex;
-  flex-direction: column;
-}
+  .ciljeviContainerColumn > * {
+    width: 100%;
+  }
 
+  .nasiPartneriSlider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-.ciljeviContainerColumn { 
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
+  .whyGreenesTextContainer {
+    font-size: 2vw;
+    margin-top: 10px;
+  }
 
-.ciljeviContainerColumn > * {
-  width: 100%;
-}
+  .whyGreenesTextContainer h3 {
+    font-size: 3vw;
+  }
 
-.nasiPartneriSlider {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+  .obnovljiviIzvoriTitleContainer h1 {
+    font-size: 3vw;
+  }
 
-.whyGreenesTextContainer {
-  font-size: 2vw;
-  margin-top: 10px;
-}
-
-.whyGreenesTextContainer h3 {
-  font-size: 3vw;
- 
-}
-
-.obnovljiviIzvoriTitleContainer h1 {
-  font-size: 3vw;
-}
-
-.obnovljiviIzvoriItem {
-  width: 400px;
-}
-
+  .obnovljiviIzvoriItem {
+    width: 400px;
+  }
 }
